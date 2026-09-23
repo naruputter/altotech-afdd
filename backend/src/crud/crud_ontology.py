@@ -54,7 +54,7 @@ class CRUDOntology:
         offset: Optional[int] = None,
     ) -> tuple[List[Entity], int]:
         from sqlalchemy import cast, String as SQLString
-        stmt = select(Entity)
+        stmt = select(Entity).options(selectinload(Entity.site))
         count_stmt = select(func.count(Entity.id))
         
         if site_id:

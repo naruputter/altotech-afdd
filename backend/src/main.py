@@ -3,11 +3,12 @@ from fastapi import FastAPI
 from fastapi.middleware.cors import CORSMiddleware
 from sqlalchemy import text
 from src.core.config import settings
-from src.db.session import engine
+from src.db.session import engine, AsyncSessionLocal
 from src.db.base import Base
 # Import all models to ensure metadata registration
 import src.models
 from src.api.v1.router import api_router
+from src.seeds.seeder import seed_database_from_json
 
 
 import asyncio
@@ -31,6 +32,10 @@ async def lifespan(app: FastAPI):
         except Exception:
             # Fallback gracefully if standard PostgreSQL is used
             pass
+
+    # Auto-seed database from ontology_seed.json if database is empty
+    async with AsyncSessionLocal() as session:
+        await seed_database_from_json(session)
 
     # Start background workers
     mqtt_task = asyncio.create_task(start_mqtt_consumer())
@@ -119,4 +124,3 @@ async def global_exception_handler(request: Request, exc: Exception):
             "message": f"Internal Server Error: {str(exc)}",
         },
     )
-

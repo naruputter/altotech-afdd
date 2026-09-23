@@ -111,17 +111,27 @@ export default function Sidebar({
             height: '36px',
             minWidth: '36px',
             borderRadius: '8px',
-            background: 'linear-gradient(135deg, #2563eb 0%, #38bdf8 100%)',
             display: 'flex',
             alignItems: 'center',
             justifyContent: 'center',
-            boxShadow: '0 2px 8px rgba(37,99,235,0.4)',
+            overflow: 'hidden',
             cursor: isCollapsed ? 'pointer' : 'default'
           }}
             onClick={isCollapsed ? onToggleCollapse : undefined}
             title={isCollapsed ? "Expand Sidebar" : undefined}
           >
-            <Building2 size={20} color="#ffffff" strokeWidth={2.2} />
+            <img 
+              src="/assets/images/logo.svg" 
+              alt="Logo" 
+              onError={(e) => {
+                // Fallback if svg fails to load png or icon
+                const target = e.currentTarget;
+                if (!target.src.endsWith(".png")) {
+                  target.src = "/assets/images/logo.png";
+                }
+              }}
+              style={{ width: '100%', height: '100%', objectFit: 'contain', borderRadius: '8px' }} 
+            />
           </div>
 
           {!isCollapsed && (

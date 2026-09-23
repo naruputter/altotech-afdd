@@ -3,7 +3,7 @@ import ast
 import operator
 import logging
 from datetime import datetime, timedelta, timezone
-from typing import Dict, Any, List, Optional
+from typing import Dict, Any, List, Optional, Set
 from sqlalchemy.ext.asyncio import AsyncSession
 from src.crud.crud_rule import crud_rule
 from src.crud.crud_telemetry import crud_telemetry
@@ -42,6 +42,18 @@ SAFE_FUNCTIONS = {
     "round": round,
 }
 
+
+def extract_variables_from_expr(expr: str) -> Set[str]:
+    variables = set()
+    try:
+        parsed = ast.parse(expr.strip(), mode="eval")
+        for node in ast.walk(parsed):
+            if isinstance(node, ast.Name):
+                if node.id not in SAFE_FUNCTIONS:
+                    variables.add(node.id)
+    except Exception:
+        pass
+    return variables
 
 def safe_eval_node(node: ast.AST, context: Dict[str, Any]) -> Any:
     if isinstance(node, ast.Expression):
@@ -200,12 +212,23 @@ class AFDDEvaluator:
         window_start: datetime,
         window_end: datetime,
     ) -> tuple[bool, Dict[str, Any]]:
-        metrics = fault_logic.get("metrics", [])
         condition_expr = fault_logic.get("condition_expr", "")
         params = fault_logic.get("parameters", {})
 
-        if not condition_expr or not metrics:
+        if not condition_expr:
             return False, {}
+
+        # Auto-discover all required metric names directly from AST condition expression
+        expr_vars = extract_variables_from_expr(condition_expr)
+        # Exclude parameters defined in rule parameters (e.g. tolerance)
+        required_metrics = {v for v in expr_vars if v not in params}
+        
+        # Include explicit metrics from fault_logic and run_status if required
+        explicit_metrics = set(fault_logic.get("metrics", []))
+        metrics = list(required_metrics.union(explicit_metrics))
+
+        if params.get("require_run_status_on", False) and "run_status" not in metrics:
+            metrics.append("run_status")
 
         # 1. Fetch telemetry for all required metrics within window
         telemetry_records: Dict[str, list] = {}

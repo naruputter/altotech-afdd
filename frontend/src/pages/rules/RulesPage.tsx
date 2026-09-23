@@ -155,6 +155,7 @@ export default function RulesPage() {
     // Derive metric list from expression
     const knownMetrics = ['supply_air_temperature_c', 'supply_air_temperature_setpoint_c', 'run_status', 'co2_ppm', 'active_power_kw', 'chw_valve', 'reheat_valve', 'val'];
     const detectedMetrics = knownMetrics.filter(m => formData.condition_expr.includes(m));
+    const finalMetrics = [...detectedMetrics];
     const isAhu = formData.entity_type === 'AHU';
     const requireRunStatus = isAhu && formData.require_run_status_on;
     if (requireRunStatus && !finalMetrics.includes('run_status')) {
@@ -225,9 +226,9 @@ export default function RulesPage() {
   const columns: Column<any>[] = useMemo(() => [
     {
       key: 'name',
-      header: 'Rule Name & Diagnostic Description',
+      header: 'Rule Name',
       type: 'text',
-      width: '280px',
+      width: '35%',
       render: (rule) => (
         <div>
           <div style={{ display: 'flex', alignItems: 'center', gap: '6px' }}>
@@ -238,7 +239,7 @@ export default function RulesPage() {
               </span>
             )}
           </div>
-          <div style={{ fontSize: '0.74rem', color: 'var(--text-muted)', marginTop: '2px', lineClamp: 1, overflow: 'hidden', textOverflow: 'ellipsis', whiteSpace: 'nowrap' }}>
+          <div style={{ fontSize: '0.74rem', color: 'var(--text-muted)', marginTop: '2px', overflow: 'hidden', textOverflow: 'ellipsis', whiteSpace: 'nowrap', maxWidth: '380px' }}>
             {rule.description}
           </div>
           <div className="mono" style={{ fontSize: '0.68rem', color: 'var(--text-muted)', marginTop: '2px' }}>{rule.code || rule.id}</div>
