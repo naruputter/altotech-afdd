@@ -1,0 +1,45 @@
+{
+  "entities": [
+    { "id": "Bldg_A", "name": "Building A - Headquarters", "entity_type": "Building", "site_id": "Building_A", "brick_class": "brick:Building" },
+    { "id": "Floor_A_1", "name": "Building A Floor 1", "entity_type": "Floor", "site_id": "Building_A", "brick_class": "brick:Floor" },
+    { "id": "Floor_A_2", "name": "Building A Floor 2", "entity_type": "Floor", "site_id": "Building_A", "brick_class": "brick:Floor" },
+    { "id": "Zone_A_1", "name": "HVAC Zone A-1", "entity_type": "HVAC_Zone", "site_id": "Building_A", "brick_class": "brick:HVAC_Zone" },
+    { "id": "Zone_A_2", "name": "HVAC Zone A-2", "entity_type": "HVAC_Zone", "site_id": "Building_A", "brick_class": "brick:HVAC_Zone" },
+    { "id": "Room_A_101", "name": "Conference Room 101", "entity_type": "Room", "site_id": "Building_A", "brick_class": "brick:Room" },
+    { "id": "Room_A_102", "name": "Open Office 102", "entity_type": "Room", "site_id": "Building_A", "brick_class": "brick:Room" },
+    { "id": "Room_A_201", "name": "Executive Office 201", "entity_type": "Room", "site_id": "Building_A", "brick_class": "brick:Room" },
+    { "id": "AHU_A_01", "name": "Air Handling Unit AHU-A1", "entity_type": "AHU", "site_id": "Building_A", "brick_class": "brick:Air_Handling_Unit" },
+    { "id": "AHU_A_02", "name": "Air Handling Unit AHU-A2", "entity_type": "AHU", "site_id": "Building_A", "brick_class": "brick:Air_Handling_Unit" },
+    { "id": "Meter_A_Main", "name": "Main Electrical Meter Bldg A", "entity_type": "Meter", "site_id": "Building_A", "brick_class": "brick:Electric_Meter" },
+    { "id": "IAQ_A_101", "name": "IAQ Sensor Room 101", "entity_type": "IAQ_Sensor", "site_id": "Building_A", "brick_class": "brick:Air_Quality_Sensor" },
+
+    { "id": "Bldg_B", "name": "Building B - Tech Center", "entity_type": "Building", "site_id": "Building_B", "brick_class": "brick:Building" },
+    { "id": "Zone_B_1", "name": "HVAC Zone B-1", "entity_type": "HVAC_Zone", "site_id": "Building_B", "brick_class": "brick:HVAC_Zone" },
+    { "id": "Room_B_101", "name": "Lab Room B101", "entity_type": "Room", "site_id": "Building_B", "brick_class": "brick:Room" },
+    { "id": "AHU_B_01", "name": "Air Handling Unit AHU-B1", "entity_type": "AHU", "site_id": "Building_B", "brick_class": "brick:Air_Handling_Unit" },
+    { "id": "Meter_B_Main", "name": "Main Electrical Meter Bldg B", "entity_type": "Meter", "site_id": "Building_B", "brick_class": "brick:Electric_Meter" },
+
+    { "id": "Bldg_C", "name": "Building C - Warehouse", "entity_type": "Building", "site_id": "Building_C", "brick_class": "brick:Building" },
+    { "id": "Zone_C_1", "name": "HVAC Zone C-1", "entity_type": "HVAC_Zone", "site_id": "Building_C", "brick_class": "brick:HVAC_Zone" },
+    { "id": "Room_C_101", "name": "Storage Area C101", "entity_type": "Room", "site_id": "Building_C", "brick_class": "brick:Room" },
+    { "id": "AHU_C_01", "name": "Air Handling Unit AHU-C1", "entity_type": "AHU", "site_id": "Building_C", "brick_class": "brick:Air_Handling_Unit" }
+  ],
+  "relationships": [
+    { "subject_id": "Bldg_A", "predicate": "hasPart", "object_id": "Floor_A_1" },
+    { "subject_id": "Bldg_A", "predicate": "hasPart", "object_id": "Floor_A_2" },
+    { "subject_id": "AHU_A_01", "predicate": "feeds", "object_id": "Zone_A_1" },
+    { "subject_id": "AHU_A_02", "predicate": "feeds", "object_id": "Zone_A_2" },
+    { "subject_id": "Room_A_101", "predicate": "isPartOf", "object_id": "Zone_A_1" },
+    { "subject_id": "Room_A_102", "predicate": "isPartOf", "object_id": "Zone_A_1" },
+    { "subject_id": "Room_A_201", "predicate": "isPartOf", "object_id": "Zone_A_2" },
+    { "subject_id": "Meter_A_Main", "predicate": "measures", "object_id": "Bldg_A" },
+    { "subject_id": "IAQ_A_101", "predicate": "locatedIn", "object_id": "Room_A_101" },
+
+    { "subject_id": "AHU_B_01", "predicate": "feeds", "object_id": "Zone_B_1" },
+    { "subject_id": "Room_B_101", "predicate": "isPartOf", "object_id": "Zone_B_1" },
+    { "subject_id": "Meter_B_Main", "predicate": "measures", "object_id": "Bldg_B" },
+
+    { "subject_id": "AHU_C_01", "predicate": "feeds", "object_id": "Zone_C_1" },
+    { "subject_id": "Room_C_101", "predicate": "isPartOf", "object_id": "Zone_C_1" }
+  ]
+}

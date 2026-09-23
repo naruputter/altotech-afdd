@@ -1,0 +1,3158 @@
+[
+  {
+    "code": "building-a",
+    "name": "Building A",
+    "site_code": "SITE_CAMPUS_A",
+    "entity_type": "BUILDING",
+    "brick_class": "brick:Building",
+    "metadata": {
+      "usage_type": "Office",
+      "property_type": "Office"
+    },
+    "relationships": []
+  },
+  {
+    "code": "building-a-lobby",
+    "name": "Building A Lobby",
+    "site_code": "SITE_CAMPUS_A",
+    "entity_type": "ROOM",
+    "brick_class": "brick:Room",
+    "metadata": {
+      "usage_type": "Lobby"
+    },
+    "relationships": [
+      {
+        "predicate": "IS_PART_OF",
+        "target_code": "building-a"
+      }
+    ]
+  },
+  {
+    "code": "building-a-plant-room",
+    "name": "Building A Plant Room",
+    "site_code": "SITE_CAMPUS_A",
+    "entity_type": "ROOM",
+    "brick_class": "brick:Room",
+    "metadata": {
+      "usage_type": "Plant Room"
+    },
+    "relationships": [
+      {
+        "predicate": "IS_PART_OF",
+        "target_code": "building-a"
+      }
+    ]
+  },
+  {
+    "code": "building-a-f01",
+    "name": "Floor 1",
+    "site_code": "SITE_CAMPUS_A",
+    "entity_type": "FLOOR",
+    "brick_class": "brick:Floor",
+    "metadata": {
+      "usage_type": "Tenant Floor"
+    },
+    "relationships": [
+      {
+        "predicate": "IS_PART_OF",
+        "target_code": "building-a"
+      }
+    ]
+  },
+  {
+    "code": "building-a-f01-east",
+    "name": "Floor 1 East Zone",
+    "site_code": "SITE_CAMPUS_A",
+    "entity_type": "HVAC_ZONE",
+    "brick_class": "brick:HVAC_Zone",
+    "metadata": {
+      "usage_type": "Tenant Area"
+    },
+    "relationships": [
+      {
+        "predicate": "IS_PART_OF",
+        "target_code": "building-a-f01"
+      }
+    ]
+  },
+  {
+    "code": "building-a-f01-east-r01",
+    "name": "Room A-01-East-1",
+    "site_code": "SITE_CAMPUS_A",
+    "entity_type": "ROOM",
+    "brick_class": "brick:Room",
+    "metadata": {
+      "usage_type": "Office Room"
+    },
+    "relationships": [
+      {
+        "predicate": "IS_PART_OF",
+        "target_code": "building-a-f01-east"
+      }
+    ]
+  },
+  {
+    "code": "building-a-f01-east-r02",
+    "name": "Room A-01-East-2",
+    "site_code": "SITE_CAMPUS_A",
+    "entity_type": "ROOM",
+    "brick_class": "brick:Room",
+    "metadata": {
+      "usage_type": "Office Room"
+    },
+    "relationships": [
+      {
+        "predicate": "IS_PART_OF",
+        "target_code": "building-a-f01-east"
+      }
+    ]
+  },
+  {
+    "code": "building-a-f01-west",
+    "name": "Floor 1 West Zone",
+    "site_code": "SITE_CAMPUS_A",
+    "entity_type": "HVAC_ZONE",
+    "brick_class": "brick:HVAC_Zone",
+    "metadata": {
+      "usage_type": "Tenant Area"
+    },
+    "relationships": [
+      {
+        "predicate": "IS_PART_OF",
+        "target_code": "building-a-f01"
+      }
+    ]
+  },
+  {
+    "code": "building-a-f01-west-r01",
+    "name": "Room A-01-West-1",
+    "site_code": "SITE_CAMPUS_A",
+    "entity_type": "ROOM",
+    "brick_class": "brick:Room",
+    "metadata": {
+      "usage_type": "Office Room"
+    },
+    "relationships": [
+      {
+        "predicate": "IS_PART_OF",
+        "target_code": "building-a-f01-west"
+      }
+    ]
+  },
+  {
+    "code": "building-a-f01-west-r02",
+    "name": "Room A-01-West-2",
+    "site_code": "SITE_CAMPUS_A",
+    "entity_type": "ROOM",
+    "brick_class": "brick:Room",
+    "metadata": {
+      "usage_type": "Office Room"
+    },
+    "relationships": [
+      {
+        "predicate": "IS_PART_OF",
+        "target_code": "building-a-f01-west"
+      }
+    ]
+  },
+  {
+    "code": "building-a-f02",
+    "name": "Floor 2",
+    "site_code": "SITE_CAMPUS_A",
+    "entity_type": "FLOOR",
+    "brick_class": "brick:Floor",
+    "metadata": {
+      "usage_type": "Tenant Floor"
+    },
+    "relationships": [
+      {
+        "predicate": "IS_PART_OF",
+        "target_code": "building-a"
+      }
+    ]
+  },
+  {
+    "code": "building-a-f02-east",
+    "name": "Floor 2 East Zone",
+    "site_code": "SITE_CAMPUS_A",
+    "entity_type": "HVAC_ZONE",
+    "brick_class": "brick:HVAC_Zone",
+    "metadata": {
+      "usage_type": "Tenant Area"
+    },
+    "relationships": [
+      {
+        "predicate": "IS_PART_OF",
+        "target_code": "building-a-f02"
+      }
+    ]
+  },
+  {
+    "code": "building-a-f02-east-r01",
+    "name": "Room A-02-East-1",
+    "site_code": "SITE_CAMPUS_A",
+    "entity_type": "ROOM",
+    "brick_class": "brick:Room",
+    "metadata": {
+      "usage_type": "Office Room"
+    },
+    "relationships": [
+      {
+        "predicate": "IS_PART_OF",
+        "target_code": "building-a-f02-east"
+      }
+    ]
+  },
+  {
+    "code": "building-a-f02-east-r02",
+    "name": "Room A-02-East-2",
+    "site_code": "SITE_CAMPUS_A",
+    "entity_type": "ROOM",
+    "brick_class": "brick:Room",
+    "metadata": {
+      "usage_type": "Office Room"
+    },
+    "relationships": [
+      {
+        "predicate": "IS_PART_OF",
+        "target_code": "building-a-f02-east"
+      }
+    ]
+  },
+  {
+    "code": "building-a-f02-west",
+    "name": "Floor 2 West Zone",
+    "site_code": "SITE_CAMPUS_A",
+    "entity_type": "HVAC_ZONE",
+    "brick_class": "brick:HVAC_Zone",
+    "metadata": {
+      "usage_type": "Tenant Area"
+    },
+    "relationships": [
+      {
+        "predicate": "IS_PART_OF",
+        "target_code": "building-a-f02"
+      }
+    ]
+  },
+  {
+    "code": "building-a-f02-west-r01",
+    "name": "Room A-02-West-1",
+    "site_code": "SITE_CAMPUS_A",
+    "entity_type": "ROOM",
+    "brick_class": "brick:Room",
+    "metadata": {
+      "usage_type": "Office Room"
+    },
+    "relationships": [
+      {
+        "predicate": "IS_PART_OF",
+        "target_code": "building-a-f02-west"
+      }
+    ]
+  },
+  {
+    "code": "building-a-f02-west-r02",
+    "name": "Room A-02-West-2",
+    "site_code": "SITE_CAMPUS_A",
+    "entity_type": "ROOM",
+    "brick_class": "brick:Room",
+    "metadata": {
+      "usage_type": "Office Room"
+    },
+    "relationships": [
+      {
+        "predicate": "IS_PART_OF",
+        "target_code": "building-a-f02-west"
+      }
+    ]
+  },
+  {
+    "code": "building-a-f03",
+    "name": "Floor 3",
+    "site_code": "SITE_CAMPUS_A",
+    "entity_type": "FLOOR",
+    "brick_class": "brick:Floor",
+    "metadata": {
+      "usage_type": "Tenant Floor"
+    },
+    "relationships": [
+      {
+        "predicate": "IS_PART_OF",
+        "target_code": "building-a"
+      }
+    ]
+  },
+  {
+    "code": "building-a-f03-east",
+    "name": "Floor 3 East Zone",
+    "site_code": "SITE_CAMPUS_A",
+    "entity_type": "HVAC_ZONE",
+    "brick_class": "brick:HVAC_Zone",
+    "metadata": {
+      "usage_type": "Tenant Area"
+    },
+    "relationships": [
+      {
+        "predicate": "IS_PART_OF",
+        "target_code": "building-a-f03"
+      }
+    ]
+  },
+  {
+    "code": "building-a-f03-east-r01",
+    "name": "Room A-03-East-1",
+    "site_code": "SITE_CAMPUS_A",
+    "entity_type": "ROOM",
+    "brick_class": "brick:Room",
+    "metadata": {
+      "usage_type": "Office Room"
+    },
+    "relationships": [
+      {
+        "predicate": "IS_PART_OF",
+        "target_code": "building-a-f03-east"
+      }
+    ]
+  },
+  {
+    "code": "building-a-f03-east-r02",
+    "name": "Room A-03-East-2",
+    "site_code": "SITE_CAMPUS_A",
+    "entity_type": "ROOM",
+    "brick_class": "brick:Room",
+    "metadata": {
+      "usage_type": "Office Room"
+    },
+    "relationships": [
+      {
+        "predicate": "IS_PART_OF",
+        "target_code": "building-a-f03-east"
+      }
+    ]
+  },
+  {
+    "code": "building-a-f03-west",
+    "name": "Floor 3 West Zone",
+    "site_code": "SITE_CAMPUS_A",
+    "entity_type": "HVAC_ZONE",
+    "brick_class": "brick:HVAC_Zone",
+    "metadata": {
+      "usage_type": "Tenant Area"
+    },
+    "relationships": [
+      {
+        "predicate": "IS_PART_OF",
+        "target_code": "building-a-f03"
+      }
+    ]
+  },
+  {
+    "code": "building-a-f03-west-r01",
+    "name": "Room A-03-West-1",
+    "site_code": "SITE_CAMPUS_A",
+    "entity_type": "ROOM",
+    "brick_class": "brick:Room",
+    "metadata": {
+      "usage_type": "Office Room"
+    },
+    "relationships": [
+      {
+        "predicate": "IS_PART_OF",
+        "target_code": "building-a-f03-west"
+      }
+    ]
+  },
+  {
+    "code": "building-a-f03-west-r02",
+    "name": "Room A-03-West-2",
+    "site_code": "SITE_CAMPUS_A",
+    "entity_type": "ROOM",
+    "brick_class": "brick:Room",
+    "metadata": {
+      "usage_type": "Office Room"
+    },
+    "relationships": [
+      {
+        "predicate": "IS_PART_OF",
+        "target_code": "building-a-f03-west"
+      }
+    ]
+  },
+  {
+    "code": "building-a-f04",
+    "name": "Floor 4",
+    "site_code": "SITE_CAMPUS_A",
+    "entity_type": "FLOOR",
+    "brick_class": "brick:Floor",
+    "metadata": {
+      "usage_type": "Tenant Floor"
+    },
+    "relationships": [
+      {
+        "predicate": "IS_PART_OF",
+        "target_code": "building-a"
+      }
+    ]
+  },
+  {
+    "code": "building-a-f04-east",
+    "name": "Floor 4 East Zone",
+    "site_code": "SITE_CAMPUS_A",
+    "entity_type": "HVAC_ZONE",
+    "brick_class": "brick:HVAC_Zone",
+    "metadata": {
+      "usage_type": "Tenant Area"
+    },
+    "relationships": [
+      {
+        "predicate": "IS_PART_OF",
+        "target_code": "building-a-f04"
+      }
+    ]
+  },
+  {
+    "code": "building-a-f04-east-r01",
+    "name": "Room A-04-East-1",
+    "site_code": "SITE_CAMPUS_A",
+    "entity_type": "ROOM",
+    "brick_class": "brick:Room",
+    "metadata": {
+      "usage_type": "Office Room"
+    },
+    "relationships": [
+      {
+        "predicate": "IS_PART_OF",
+        "target_code": "building-a-f04-east"
+      }
+    ]
+  },
+  {
+    "code": "building-a-f04-east-r02",
+    "name": "Room A-04-East-2",
+    "site_code": "SITE_CAMPUS_A",
+    "entity_type": "ROOM",
+    "brick_class": "brick:Room",
+    "metadata": {
+      "usage_type": "Office Room"
+    },
+    "relationships": [
+      {
+        "predicate": "IS_PART_OF",
+        "target_code": "building-a-f04-east"
+      }
+    ]
+  },
+  {
+    "code": "building-a-f04-west",
+    "name": "Floor 4 West Zone",
+    "site_code": "SITE_CAMPUS_A",
+    "entity_type": "HVAC_ZONE",
+    "brick_class": "brick:HVAC_Zone",
+    "metadata": {
+      "usage_type": "Tenant Area"
+    },
+    "relationships": [
+      {
+        "predicate": "IS_PART_OF",
+        "target_code": "building-a-f04"
+      }
+    ]
+  },
+  {
+    "code": "building-a-f04-west-r01",
+    "name": "Room A-04-West-1",
+    "site_code": "SITE_CAMPUS_A",
+    "entity_type": "ROOM",
+    "brick_class": "brick:Room",
+    "metadata": {
+      "usage_type": "Office Room"
+    },
+    "relationships": [
+      {
+        "predicate": "IS_PART_OF",
+        "target_code": "building-a-f04-west"
+      }
+    ]
+  },
+  {
+    "code": "building-a-f04-west-r02",
+    "name": "Room A-04-West-2",
+    "site_code": "SITE_CAMPUS_A",
+    "entity_type": "ROOM",
+    "brick_class": "brick:Room",
+    "metadata": {
+      "usage_type": "Office Room"
+    },
+    "relationships": [
+      {
+        "predicate": "IS_PART_OF",
+        "target_code": "building-a-f04-west"
+      }
+    ]
+  },
+  {
+    "code": "building-b",
+    "name": "Building B",
+    "site_code": "SITE_CAMPUS_B",
+    "entity_type": "BUILDING",
+    "brick_class": "brick:Building",
+    "metadata": {
+      "usage_type": "Office",
+      "property_type": "Office"
+    },
+    "relationships": []
+  },
+  {
+    "code": "building-b-lobby",
+    "name": "Building B Lobby",
+    "site_code": "SITE_CAMPUS_B",
+    "entity_type": "ROOM",
+    "brick_class": "brick:Room",
+    "metadata": {
+      "usage_type": "Lobby"
+    },
+    "relationships": [
+      {
+        "predicate": "IS_PART_OF",
+        "target_code": "building-b"
+      }
+    ]
+  },
+  {
+    "code": "building-b-plant-room",
+    "name": "Building B Plant Room",
+    "site_code": "SITE_CAMPUS_B",
+    "entity_type": "ROOM",
+    "brick_class": "brick:Room",
+    "metadata": {
+      "usage_type": "Plant Room"
+    },
+    "relationships": [
+      {
+        "predicate": "IS_PART_OF",
+        "target_code": "building-b"
+      }
+    ]
+  },
+  {
+    "code": "building-b-f01",
+    "name": "Floor 1",
+    "site_code": "SITE_CAMPUS_B",
+    "entity_type": "FLOOR",
+    "brick_class": "brick:Floor",
+    "metadata": {
+      "usage_type": "Tenant Floor"
+    },
+    "relationships": [
+      {
+        "predicate": "IS_PART_OF",
+        "target_code": "building-b"
+      }
+    ]
+  },
+  {
+    "code": "building-b-f01-east",
+    "name": "Floor 1 East Zone",
+    "site_code": "SITE_CAMPUS_B",
+    "entity_type": "HVAC_ZONE",
+    "brick_class": "brick:HVAC_Zone",
+    "metadata": {
+      "usage_type": "Tenant Area"
+    },
+    "relationships": [
+      {
+        "predicate": "IS_PART_OF",
+        "target_code": "building-b-f01"
+      }
+    ]
+  },
+  {
+    "code": "building-b-f01-east-r01",
+    "name": "Room B-01-East-1",
+    "site_code": "SITE_CAMPUS_B",
+    "entity_type": "ROOM",
+    "brick_class": "brick:Room",
+    "metadata": {
+      "usage_type": "Office Room"
+    },
+    "relationships": [
+      {
+        "predicate": "IS_PART_OF",
+        "target_code": "building-b-f01-east"
+      }
+    ]
+  },
+  {
+    "code": "building-b-f01-east-r02",
+    "name": "Room B-01-East-2",
+    "site_code": "SITE_CAMPUS_B",
+    "entity_type": "ROOM",
+    "brick_class": "brick:Room",
+    "metadata": {
+      "usage_type": "Office Room"
+    },
+    "relationships": [
+      {
+        "predicate": "IS_PART_OF",
+        "target_code": "building-b-f01-east"
+      }
+    ]
+  },
+  {
+    "code": "building-b-f01-west",
+    "name": "Floor 1 West Zone",
+    "site_code": "SITE_CAMPUS_B",
+    "entity_type": "HVAC_ZONE",
+    "brick_class": "brick:HVAC_Zone",
+    "metadata": {
+      "usage_type": "Tenant Area"
+    },
+    "relationships": [
+      {
+        "predicate": "IS_PART_OF",
+        "target_code": "building-b-f01"
+      }
+    ]
+  },
+  {
+    "code": "building-b-f01-west-r01",
+    "name": "Room B-01-West-1",
+    "site_code": "SITE_CAMPUS_B",
+    "entity_type": "ROOM",
+    "brick_class": "brick:Room",
+    "metadata": {
+      "usage_type": "Office Room"
+    },
+    "relationships": [
+      {
+        "predicate": "IS_PART_OF",
+        "target_code": "building-b-f01-west"
+      }
+    ]
+  },
+  {
+    "code": "building-b-f01-west-r02",
+    "name": "Room B-01-West-2",
+    "site_code": "SITE_CAMPUS_B",
+    "entity_type": "ROOM",
+    "brick_class": "brick:Room",
+    "metadata": {
+      "usage_type": "Office Room"
+    },
+    "relationships": [
+      {
+        "predicate": "IS_PART_OF",
+        "target_code": "building-b-f01-west"
+      }
+    ]
+  },
+  {
+    "code": "building-b-f02",
+    "name": "Floor 2",
+    "site_code": "SITE_CAMPUS_B",
+    "entity_type": "FLOOR",
+    "brick_class": "brick:Floor",
+    "metadata": {
+      "usage_type": "Tenant Floor"
+    },
+    "relationships": [
+      {
+        "predicate": "IS_PART_OF",
+        "target_code": "building-b"
+      }
+    ]
+  },
+  {
+    "code": "building-b-f02-east",
+    "name": "Floor 2 East Zone",
+    "site_code": "SITE_CAMPUS_B",
+    "entity_type": "HVAC_ZONE",
+    "brick_class": "brick:HVAC_Zone",
+    "metadata": {
+      "usage_type": "Tenant Area"
+    },
+    "relationships": [
+      {
+        "predicate": "IS_PART_OF",
+        "target_code": "building-b-f02"
+      }
+    ]
+  },
+  {
+    "code": "building-b-f02-east-r01",
+    "name": "Room B-02-East-1",
+    "site_code": "SITE_CAMPUS_B",
+    "entity_type": "ROOM",
+    "brick_class": "brick:Room",
+    "metadata": {
+      "usage_type": "Office Room"
+    },
+    "relationships": [
+      {
+        "predicate": "IS_PART_OF",
+        "target_code": "building-b-f02-east"
+      }
+    ]
+  },
+  {
+    "code": "building-b-f02-east-r02",
+    "name": "Room B-02-East-2",
+    "site_code": "SITE_CAMPUS_B",
+    "entity_type": "ROOM",
+    "brick_class": "brick:Room",
+    "metadata": {
+      "usage_type": "Office Room"
+    },
+    "relationships": [
+      {
+        "predicate": "IS_PART_OF",
+        "target_code": "building-b-f02-east"
+      }
+    ]
+  },
+  {
+    "code": "building-b-f02-west",
+    "name": "Floor 2 West Zone",
+    "site_code": "SITE_CAMPUS_B",
+    "entity_type": "HVAC_ZONE",
+    "brick_class": "brick:HVAC_Zone",
+    "metadata": {
+      "usage_type": "Tenant Area"
+    },
+    "relationships": [
+      {
+        "predicate": "IS_PART_OF",
+        "target_code": "building-b-f02"
+      }
+    ]
+  },
+  {
+    "code": "building-b-f02-west-r01",
+    "name": "Room B-02-West-1",
+    "site_code": "SITE_CAMPUS_B",
+    "entity_type": "ROOM",
+    "brick_class": "brick:Room",
+    "metadata": {
+      "usage_type": "Office Room"
+    },
+    "relationships": [
+      {
+        "predicate": "IS_PART_OF",
+        "target_code": "building-b-f02-west"
+      }
+    ]
+  },
+  {
+    "code": "building-b-f02-west-r02",
+    "name": "Room B-02-West-2",
+    "site_code": "SITE_CAMPUS_B",
+    "entity_type": "ROOM",
+    "brick_class": "brick:Room",
+    "metadata": {
+      "usage_type": "Office Room"
+    },
+    "relationships": [
+      {
+        "predicate": "IS_PART_OF",
+        "target_code": "building-b-f02-west"
+      }
+    ]
+  },
+  {
+    "code": "building-b-f03",
+    "name": "Floor 3",
+    "site_code": "SITE_CAMPUS_B",
+    "entity_type": "FLOOR",
+    "brick_class": "brick:Floor",
+    "metadata": {
+      "usage_type": "Tenant Floor"
+    },
+    "relationships": [
+      {
+        "predicate": "IS_PART_OF",
+        "target_code": "building-b"
+      }
+    ]
+  },
+  {
+    "code": "building-b-f03-east",
+    "name": "Floor 3 East Zone",
+    "site_code": "SITE_CAMPUS_B",
+    "entity_type": "HVAC_ZONE",
+    "brick_class": "brick:HVAC_Zone",
+    "metadata": {
+      "usage_type": "Tenant Area"
+    },
+    "relationships": [
+      {
+        "predicate": "IS_PART_OF",
+        "target_code": "building-b-f03"
+      }
+    ]
+  },
+  {
+    "code": "building-b-f03-east-r01",
+    "name": "Room B-03-East-1",
+    "site_code": "SITE_CAMPUS_B",
+    "entity_type": "ROOM",
+    "brick_class": "brick:Room",
+    "metadata": {
+      "usage_type": "Office Room"
+    },
+    "relationships": [
+      {
+        "predicate": "IS_PART_OF",
+        "target_code": "building-b-f03-east"
+      }
+    ]
+  },
+  {
+    "code": "building-b-f03-east-r02",
+    "name": "Room B-03-East-2",
+    "site_code": "SITE_CAMPUS_B",
+    "entity_type": "ROOM",
+    "brick_class": "brick:Room",
+    "metadata": {
+      "usage_type": "Office Room"
+    },
+    "relationships": [
+      {
+        "predicate": "IS_PART_OF",
+        "target_code": "building-b-f03-east"
+      }
+    ]
+  },
+  {
+    "code": "building-b-f03-west",
+    "name": "Floor 3 West Zone",
+    "site_code": "SITE_CAMPUS_B",
+    "entity_type": "HVAC_ZONE",
+    "brick_class": "brick:HVAC_Zone",
+    "metadata": {
+      "usage_type": "Tenant Area"
+    },
+    "relationships": [
+      {
+        "predicate": "IS_PART_OF",
+        "target_code": "building-b-f03"
+      }
+    ]
+  },
+  {
+    "code": "building-b-f03-west-r01",
+    "name": "Room B-03-West-1",
+    "site_code": "SITE_CAMPUS_B",
+    "entity_type": "ROOM",
+    "brick_class": "brick:Room",
+    "metadata": {
+      "usage_type": "Office Room"
+    },
+    "relationships": [
+      {
+        "predicate": "IS_PART_OF",
+        "target_code": "building-b-f03-west"
+      }
+    ]
+  },
+  {
+    "code": "building-b-f03-west-r02",
+    "name": "Room B-03-West-2",
+    "site_code": "SITE_CAMPUS_B",
+    "entity_type": "ROOM",
+    "brick_class": "brick:Room",
+    "metadata": {
+      "usage_type": "Office Room"
+    },
+    "relationships": [
+      {
+        "predicate": "IS_PART_OF",
+        "target_code": "building-b-f03-west"
+      }
+    ]
+  },
+  {
+    "code": "building-b-f04",
+    "name": "Floor 4",
+    "site_code": "SITE_CAMPUS_B",
+    "entity_type": "FLOOR",
+    "brick_class": "brick:Floor",
+    "metadata": {
+      "usage_type": "Tenant Floor"
+    },
+    "relationships": [
+      {
+        "predicate": "IS_PART_OF",
+        "target_code": "building-b"
+      }
+    ]
+  },
+  {
+    "code": "building-b-f04-east",
+    "name": "Floor 4 East Zone",
+    "site_code": "SITE_CAMPUS_B",
+    "entity_type": "HVAC_ZONE",
+    "brick_class": "brick:HVAC_Zone",
+    "metadata": {
+      "usage_type": "Tenant Area"
+    },
+    "relationships": [
+      {
+        "predicate": "IS_PART_OF",
+        "target_code": "building-b-f04"
+      }
+    ]
+  },
+  {
+    "code": "building-b-f04-east-r01",
+    "name": "Room B-04-East-1",
+    "site_code": "SITE_CAMPUS_B",
+    "entity_type": "ROOM",
+    "brick_class": "brick:Room",
+    "metadata": {
+      "usage_type": "Office Room"
+    },
+    "relationships": [
+      {
+        "predicate": "IS_PART_OF",
+        "target_code": "building-b-f04-east"
+      }
+    ]
+  },
+  {
+    "code": "building-b-f04-east-r02",
+    "name": "Room B-04-East-2",
+    "site_code": "SITE_CAMPUS_B",
+    "entity_type": "ROOM",
+    "brick_class": "brick:Room",
+    "metadata": {
+      "usage_type": "Office Room"
+    },
+    "relationships": [
+      {
+        "predicate": "IS_PART_OF",
+        "target_code": "building-b-f04-east"
+      }
+    ]
+  },
+  {
+    "code": "building-b-f04-west",
+    "name": "Floor 4 West Zone",
+    "site_code": "SITE_CAMPUS_B",
+    "entity_type": "HVAC_ZONE",
+    "brick_class": "brick:HVAC_Zone",
+    "metadata": {
+      "usage_type": "Tenant Area"
+    },
+    "relationships": [
+      {
+        "predicate": "IS_PART_OF",
+        "target_code": "building-b-f04"
+      }
+    ]
+  },
+  {
+    "code": "building-b-f04-west-r01",
+    "name": "Room B-04-West-1",
+    "site_code": "SITE_CAMPUS_B",
+    "entity_type": "ROOM",
+    "brick_class": "brick:Room",
+    "metadata": {
+      "usage_type": "Office Room"
+    },
+    "relationships": [
+      {
+        "predicate": "IS_PART_OF",
+        "target_code": "building-b-f04-west"
+      }
+    ]
+  },
+  {
+    "code": "building-b-f04-west-r02",
+    "name": "Room B-04-West-2",
+    "site_code": "SITE_CAMPUS_B",
+    "entity_type": "ROOM",
+    "brick_class": "brick:Room",
+    "metadata": {
+      "usage_type": "Office Room"
+    },
+    "relationships": [
+      {
+        "predicate": "IS_PART_OF",
+        "target_code": "building-b-f04-west"
+      }
+    ]
+  },
+  {
+    "code": "building-c",
+    "name": "Building C",
+    "site_code": "SITE_CAMPUS_C",
+    "entity_type": "BUILDING",
+    "brick_class": "brick:Building",
+    "metadata": {
+      "usage_type": "Hotel",
+      "property_type": "Hotel"
+    },
+    "relationships": []
+  },
+  {
+    "code": "building-c-lobby",
+    "name": "Building C Lobby",
+    "site_code": "SITE_CAMPUS_C",
+    "entity_type": "ROOM",
+    "brick_class": "brick:Room",
+    "metadata": {
+      "usage_type": "Lobby"
+    },
+    "relationships": [
+      {
+        "predicate": "IS_PART_OF",
+        "target_code": "building-c"
+      }
+    ]
+  },
+  {
+    "code": "building-c-plant-room",
+    "name": "Building C Plant Room",
+    "site_code": "SITE_CAMPUS_C",
+    "entity_type": "ROOM",
+    "brick_class": "brick:Room",
+    "metadata": {
+      "usage_type": "Plant Room"
+    },
+    "relationships": [
+      {
+        "predicate": "IS_PART_OF",
+        "target_code": "building-c"
+      }
+    ]
+  },
+  {
+    "code": "building-c-f01",
+    "name": "Floor 1",
+    "site_code": "SITE_CAMPUS_C",
+    "entity_type": "FLOOR",
+    "brick_class": "brick:Floor",
+    "metadata": {
+      "usage_type": "Guest Floor"
+    },
+    "relationships": [
+      {
+        "predicate": "IS_PART_OF",
+        "target_code": "building-c"
+      }
+    ]
+  },
+  {
+    "code": "building-c-f01-east",
+    "name": "Floor 1 East Zone",
+    "site_code": "SITE_CAMPUS_C",
+    "entity_type": "HVAC_ZONE",
+    "brick_class": "brick:HVAC_Zone",
+    "metadata": {
+      "usage_type": "Guest Area"
+    },
+    "relationships": [
+      {
+        "predicate": "IS_PART_OF",
+        "target_code": "building-c-f01"
+      }
+    ]
+  },
+  {
+    "code": "building-c-f01-east-r01",
+    "name": "Room C-01-East-1",
+    "site_code": "SITE_CAMPUS_C",
+    "entity_type": "ROOM",
+    "brick_class": "brick:Room",
+    "metadata": {
+      "usage_type": "Guest Room"
+    },
+    "relationships": [
+      {
+        "predicate": "IS_PART_OF",
+        "target_code": "building-c-f01-east"
+      }
+    ]
+  },
+  {
+    "code": "building-c-f01-east-r02",
+    "name": "Room C-01-East-2",
+    "site_code": "SITE_CAMPUS_C",
+    "entity_type": "ROOM",
+    "brick_class": "brick:Room",
+    "metadata": {
+      "usage_type": "Guest Room"
+    },
+    "relationships": [
+      {
+        "predicate": "IS_PART_OF",
+        "target_code": "building-c-f01-east"
+      }
+    ]
+  },
+  {
+    "code": "building-c-f01-west",
+    "name": "Floor 1 West Zone",
+    "site_code": "SITE_CAMPUS_C",
+    "entity_type": "HVAC_ZONE",
+    "brick_class": "brick:HVAC_Zone",
+    "metadata": {
+      "usage_type": "Guest Area"
+    },
+    "relationships": [
+      {
+        "predicate": "IS_PART_OF",
+        "target_code": "building-c-f01"
+      }
+    ]
+  },
+  {
+    "code": "building-c-f01-west-r01",
+    "name": "Room C-01-West-1",
+    "site_code": "SITE_CAMPUS_C",
+    "entity_type": "ROOM",
+    "brick_class": "brick:Room",
+    "metadata": {
+      "usage_type": "Guest Room"
+    },
+    "relationships": [
+      {
+        "predicate": "IS_PART_OF",
+        "target_code": "building-c-f01-west"
+      }
+    ]
+  },
+  {
+    "code": "building-c-f01-west-r02",
+    "name": "Room C-01-West-2",
+    "site_code": "SITE_CAMPUS_C",
+    "entity_type": "ROOM",
+    "brick_class": "brick:Room",
+    "metadata": {
+      "usage_type": "Guest Room"
+    },
+    "relationships": [
+      {
+        "predicate": "IS_PART_OF",
+        "target_code": "building-c-f01-west"
+      }
+    ]
+  },
+  {
+    "code": "building-c-f02",
+    "name": "Floor 2",
+    "site_code": "SITE_CAMPUS_C",
+    "entity_type": "FLOOR",
+    "brick_class": "brick:Floor",
+    "metadata": {
+      "usage_type": "Guest Floor"
+    },
+    "relationships": [
+      {
+        "predicate": "IS_PART_OF",
+        "target_code": "building-c"
+      }
+    ]
+  },
+  {
+    "code": "building-c-f02-east",
+    "name": "Floor 2 East Zone",
+    "site_code": "SITE_CAMPUS_C",
+    "entity_type": "HVAC_ZONE",
+    "brick_class": "brick:HVAC_Zone",
+    "metadata": {
+      "usage_type": "Guest Area"
+    },
+    "relationships": [
+      {
+        "predicate": "IS_PART_OF",
+        "target_code": "building-c-f02"
+      }
+    ]
+  },
+  {
+    "code": "building-c-f02-east-r01",
+    "name": "Room C-02-East-1",
+    "site_code": "SITE_CAMPUS_C",
+    "entity_type": "ROOM",
+    "brick_class": "brick:Room",
+    "metadata": {
+      "usage_type": "Guest Room"
+    },
+    "relationships": [
+      {
+        "predicate": "IS_PART_OF",
+        "target_code": "building-c-f02-east"
+      }
+    ]
+  },
+  {
+    "code": "building-c-f02-east-r02",
+    "name": "Room C-02-East-2",
+    "site_code": "SITE_CAMPUS_C",
+    "entity_type": "ROOM",
+    "brick_class": "brick:Room",
+    "metadata": {
+      "usage_type": "Guest Room"
+    },
+    "relationships": [
+      {
+        "predicate": "IS_PART_OF",
+        "target_code": "building-c-f02-east"
+      }
+    ]
+  },
+  {
+    "code": "building-c-f02-west",
+    "name": "Floor 2 West Zone",
+    "site_code": "SITE_CAMPUS_C",
+    "entity_type": "HVAC_ZONE",
+    "brick_class": "brick:HVAC_Zone",
+    "metadata": {
+      "usage_type": "Guest Area"
+    },
+    "relationships": [
+      {
+        "predicate": "IS_PART_OF",
+        "target_code": "building-c-f02"
+      }
+    ]
+  },
+  {
+    "code": "building-c-f02-west-r01",
+    "name": "Room C-02-West-1",
+    "site_code": "SITE_CAMPUS_C",
+    "entity_type": "ROOM",
+    "brick_class": "brick:Room",
+    "metadata": {
+      "usage_type": "Guest Room"
+    },
+    "relationships": [
+      {
+        "predicate": "IS_PART_OF",
+        "target_code": "building-c-f02-west"
+      }
+    ]
+  },
+  {
+    "code": "building-c-f02-west-r02",
+    "name": "Room C-02-West-2",
+    "site_code": "SITE_CAMPUS_C",
+    "entity_type": "ROOM",
+    "brick_class": "brick:Room",
+    "metadata": {
+      "usage_type": "Guest Room"
+    },
+    "relationships": [
+      {
+        "predicate": "IS_PART_OF",
+        "target_code": "building-c-f02-west"
+      }
+    ]
+  },
+  {
+    "code": "building-c-f03",
+    "name": "Floor 3",
+    "site_code": "SITE_CAMPUS_C",
+    "entity_type": "FLOOR",
+    "brick_class": "brick:Floor",
+    "metadata": {
+      "usage_type": "Guest Floor"
+    },
+    "relationships": [
+      {
+        "predicate": "IS_PART_OF",
+        "target_code": "building-c"
+      }
+    ]
+  },
+  {
+    "code": "building-c-f03-east",
+    "name": "Floor 3 East Zone",
+    "site_code": "SITE_CAMPUS_C",
+    "entity_type": "HVAC_ZONE",
+    "brick_class": "brick:HVAC_Zone",
+    "metadata": {
+      "usage_type": "Guest Area"
+    },
+    "relationships": [
+      {
+        "predicate": "IS_PART_OF",
+        "target_code": "building-c-f03"
+      }
+    ]
+  },
+  {
+    "code": "building-c-f03-east-r01",
+    "name": "Room C-03-East-1",
+    "site_code": "SITE_CAMPUS_C",
+    "entity_type": "ROOM",
+    "brick_class": "brick:Room",
+    "metadata": {
+      "usage_type": "Guest Room"
+    },
+    "relationships": [
+      {
+        "predicate": "IS_PART_OF",
+        "target_code": "building-c-f03-east"
+      }
+    ]
+  },
+  {
+    "code": "building-c-f03-east-r02",
+    "name": "Room C-03-East-2",
+    "site_code": "SITE_CAMPUS_C",
+    "entity_type": "ROOM",
+    "brick_class": "brick:Room",
+    "metadata": {
+      "usage_type": "Guest Room"
+    },
+    "relationships": [
+      {
+        "predicate": "IS_PART_OF",
+        "target_code": "building-c-f03-east"
+      }
+    ]
+  },
+  {
+    "code": "building-c-f03-west",
+    "name": "Floor 3 West Zone",
+    "site_code": "SITE_CAMPUS_C",
+    "entity_type": "HVAC_ZONE",
+    "brick_class": "brick:HVAC_Zone",
+    "metadata": {
+      "usage_type": "Guest Area"
+    },
+    "relationships": [
+      {
+        "predicate": "IS_PART_OF",
+        "target_code": "building-c-f03"
+      }
+    ]
+  },
+  {
+    "code": "building-c-f03-west-r01",
+    "name": "Room C-03-West-1",
+    "site_code": "SITE_CAMPUS_C",
+    "entity_type": "ROOM",
+    "brick_class": "brick:Room",
+    "metadata": {
+      "usage_type": "Guest Room"
+    },
+    "relationships": [
+      {
+        "predicate": "IS_PART_OF",
+        "target_code": "building-c-f03-west"
+      }
+    ]
+  },
+  {
+    "code": "building-c-f03-west-r02",
+    "name": "Room C-03-West-2",
+    "site_code": "SITE_CAMPUS_C",
+    "entity_type": "ROOM",
+    "brick_class": "brick:Room",
+    "metadata": {
+      "usage_type": "Guest Room"
+    },
+    "relationships": [
+      {
+        "predicate": "IS_PART_OF",
+        "target_code": "building-c-f03-west"
+      }
+    ]
+  },
+  {
+    "code": "building-c-f04",
+    "name": "Floor 4",
+    "site_code": "SITE_CAMPUS_C",
+    "entity_type": "FLOOR",
+    "brick_class": "brick:Floor",
+    "metadata": {
+      "usage_type": "Guest Floor"
+    },
+    "relationships": [
+      {
+        "predicate": "IS_PART_OF",
+        "target_code": "building-c"
+      }
+    ]
+  },
+  {
+    "code": "building-c-f04-east",
+    "name": "Floor 4 East Zone",
+    "site_code": "SITE_CAMPUS_C",
+    "entity_type": "HVAC_ZONE",
+    "brick_class": "brick:HVAC_Zone",
+    "metadata": {
+      "usage_type": "Guest Area"
+    },
+    "relationships": [
+      {
+        "predicate": "IS_PART_OF",
+        "target_code": "building-c-f04"
+      }
+    ]
+  },
+  {
+    "code": "building-c-f04-east-r01",
+    "name": "Room C-04-East-1",
+    "site_code": "SITE_CAMPUS_C",
+    "entity_type": "ROOM",
+    "brick_class": "brick:Room",
+    "metadata": {
+      "usage_type": "Guest Room"
+    },
+    "relationships": [
+      {
+        "predicate": "IS_PART_OF",
+        "target_code": "building-c-f04-east"
+      }
+    ]
+  },
+  {
+    "code": "building-c-f04-east-r02",
+    "name": "Room C-04-East-2",
+    "site_code": "SITE_CAMPUS_C",
+    "entity_type": "ROOM",
+    "brick_class": "brick:Room",
+    "metadata": {
+      "usage_type": "Guest Room"
+    },
+    "relationships": [
+      {
+        "predicate": "IS_PART_OF",
+        "target_code": "building-c-f04-east"
+      }
+    ]
+  },
+  {
+    "code": "building-c-f04-west",
+    "name": "Floor 4 West Zone",
+    "site_code": "SITE_CAMPUS_C",
+    "entity_type": "HVAC_ZONE",
+    "brick_class": "brick:HVAC_Zone",
+    "metadata": {
+      "usage_type": "Guest Area"
+    },
+    "relationships": [
+      {
+        "predicate": "IS_PART_OF",
+        "target_code": "building-c-f04"
+      }
+    ]
+  },
+  {
+    "code": "building-c-f04-west-r01",
+    "name": "Room C-04-West-1",
+    "site_code": "SITE_CAMPUS_C",
+    "entity_type": "ROOM",
+    "brick_class": "brick:Room",
+    "metadata": {
+      "usage_type": "Guest Room"
+    },
+    "relationships": [
+      {
+        "predicate": "IS_PART_OF",
+        "target_code": "building-c-f04-west"
+      }
+    ]
+  },
+  {
+    "code": "building-c-f04-west-r02",
+    "name": "Room C-04-West-2",
+    "site_code": "SITE_CAMPUS_C",
+    "entity_type": "ROOM",
+    "brick_class": "brick:Room",
+    "metadata": {
+      "usage_type": "Guest Room"
+    },
+    "relationships": [
+      {
+        "predicate": "IS_PART_OF",
+        "target_code": "building-c-f04-west"
+      }
+    ]
+  },
+  {
+    "code": "meter-a-f01",
+    "name": "Building A Floor 1 Electricity Meter",
+    "site_code": "SITE_CAMPUS_A",
+    "entity_type": "METER",
+    "brick_class": "brick:Electric_Meter",
+    "metadata": {
+      "property_id": "building-a"
+    },
+    "relationships": [
+      {
+        "predicate": "LOCATED_IN",
+        "target_code": "building-a-plant-room"
+      },
+      {
+        "predicate": "MEASURES",
+        "target_code": "building-a-f01"
+      }
+    ]
+  },
+  {
+    "code": "ahu-a-f01-east",
+    "name": "AHU A F01 East",
+    "site_code": "SITE_CAMPUS_A",
+    "entity_type": "AHU",
+    "brick_class": "brick:Air_Handling_Unit",
+    "metadata": {
+      "property_id": "building-a"
+    },
+    "relationships": [
+      {
+        "predicate": "LOCATED_IN",
+        "target_code": "building-a-plant-room"
+      },
+      {
+        "predicate": "FEEDS",
+        "target_code": "building-a-f01-east"
+      }
+    ]
+  },
+  {
+    "code": "iaq-a-f01-east-r01",
+    "name": "IAQ A F01 East Room 1",
+    "site_code": "SITE_CAMPUS_A",
+    "entity_type": "IAQ_SENSOR",
+    "brick_class": "brick:Air_Quality_Sensor",
+    "metadata": {
+      "property_id": "building-a"
+    },
+    "relationships": [
+      {
+        "predicate": "LOCATED_IN",
+        "target_code": "building-a-f01-east-r01"
+      },
+      {
+        "predicate": "MEASURES",
+        "target_code": "building-a-f01-east-r01"
+      }
+    ]
+  },
+  {
+    "code": "iaq-a-f01-east-r02",
+    "name": "IAQ A F01 East Room 2",
+    "site_code": "SITE_CAMPUS_A",
+    "entity_type": "IAQ_SENSOR",
+    "brick_class": "brick:Air_Quality_Sensor",
+    "metadata": {
+      "property_id": "building-a"
+    },
+    "relationships": [
+      {
+        "predicate": "LOCATED_IN",
+        "target_code": "building-a-f01-east-r02"
+      },
+      {
+        "predicate": "MEASURES",
+        "target_code": "building-a-f01-east-r02"
+      }
+    ]
+  },
+  {
+    "code": "ahu-a-f01-west",
+    "name": "AHU A F01 West",
+    "site_code": "SITE_CAMPUS_A",
+    "entity_type": "AHU",
+    "brick_class": "brick:Air_Handling_Unit",
+    "metadata": {
+      "property_id": "building-a"
+    },
+    "relationships": [
+      {
+        "predicate": "LOCATED_IN",
+        "target_code": "building-a-plant-room"
+      },
+      {
+        "predicate": "FEEDS",
+        "target_code": "building-a-f01-west"
+      }
+    ]
+  },
+  {
+    "code": "iaq-a-f01-west-r01",
+    "name": "IAQ A F01 West Room 1",
+    "site_code": "SITE_CAMPUS_A",
+    "entity_type": "IAQ_SENSOR",
+    "brick_class": "brick:Air_Quality_Sensor",
+    "metadata": {
+      "property_id": "building-a"
+    },
+    "relationships": [
+      {
+        "predicate": "LOCATED_IN",
+        "target_code": "building-a-f01-west-r01"
+      },
+      {
+        "predicate": "MEASURES",
+        "target_code": "building-a-f01-west-r01"
+      }
+    ]
+  },
+  {
+    "code": "iaq-a-f01-west-r02",
+    "name": "IAQ A F01 West Room 2",
+    "site_code": "SITE_CAMPUS_A",
+    "entity_type": "IAQ_SENSOR",
+    "brick_class": "brick:Air_Quality_Sensor",
+    "metadata": {
+      "property_id": "building-a"
+    },
+    "relationships": [
+      {
+        "predicate": "LOCATED_IN",
+        "target_code": "building-a-f01-west-r02"
+      },
+      {
+        "predicate": "MEASURES",
+        "target_code": "building-a-f01-west-r02"
+      }
+    ]
+  },
+  {
+    "code": "meter-a-f02",
+    "name": "Building A Floor 2 Electricity Meter",
+    "site_code": "SITE_CAMPUS_A",
+    "entity_type": "METER",
+    "brick_class": "brick:Electric_Meter",
+    "metadata": {
+      "property_id": "building-a"
+    },
+    "relationships": [
+      {
+        "predicate": "LOCATED_IN",
+        "target_code": "building-a-plant-room"
+      },
+      {
+        "predicate": "MEASURES",
+        "target_code": "building-a-f02"
+      }
+    ]
+  },
+  {
+    "code": "ahu-a-f02-east",
+    "name": "AHU A F02 East",
+    "site_code": "SITE_CAMPUS_A",
+    "entity_type": "AHU",
+    "brick_class": "brick:Air_Handling_Unit",
+    "metadata": {
+      "property_id": "building-a"
+    },
+    "relationships": [
+      {
+        "predicate": "LOCATED_IN",
+        "target_code": "building-a-plant-room"
+      },
+      {
+        "predicate": "FEEDS",
+        "target_code": "building-a-f02-east"
+      }
+    ]
+  },
+  {
+    "code": "iaq-a-f02-east-r01",
+    "name": "IAQ A F02 East Room 1",
+    "site_code": "SITE_CAMPUS_A",
+    "entity_type": "IAQ_SENSOR",
+    "brick_class": "brick:Air_Quality_Sensor",
+    "metadata": {
+      "property_id": "building-a"
+    },
+    "relationships": [
+      {
+        "predicate": "LOCATED_IN",
+        "target_code": "building-a-f02-east-r01"
+      },
+      {
+        "predicate": "MEASURES",
+        "target_code": "building-a-f02-east-r01"
+      }
+    ]
+  },
+  {
+    "code": "iaq-a-f02-east-r02",
+    "name": "IAQ A F02 East Room 2",
+    "site_code": "SITE_CAMPUS_A",
+    "entity_type": "IAQ_SENSOR",
+    "brick_class": "brick:Air_Quality_Sensor",
+    "metadata": {
+      "property_id": "building-a"
+    },
+    "relationships": [
+      {
+        "predicate": "LOCATED_IN",
+        "target_code": "building-a-f02-east-r02"
+      },
+      {
+        "predicate": "MEASURES",
+        "target_code": "building-a-f02-east-r02"
+      }
+    ]
+  },
+  {
+    "code": "ahu-a-f02-west",
+    "name": "AHU A F02 West",
+    "site_code": "SITE_CAMPUS_A",
+    "entity_type": "AHU",
+    "brick_class": "brick:Air_Handling_Unit",
+    "metadata": {
+      "property_id": "building-a"
+    },
+    "relationships": [
+      {
+        "predicate": "LOCATED_IN",
+        "target_code": "building-a-plant-room"
+      },
+      {
+        "predicate": "FEEDS",
+        "target_code": "building-a-f02-west"
+      }
+    ]
+  },
+  {
+    "code": "iaq-a-f02-west-r01",
+    "name": "IAQ A F02 West Room 1",
+    "site_code": "SITE_CAMPUS_A",
+    "entity_type": "IAQ_SENSOR",
+    "brick_class": "brick:Air_Quality_Sensor",
+    "metadata": {
+      "property_id": "building-a"
+    },
+    "relationships": [
+      {
+        "predicate": "LOCATED_IN",
+        "target_code": "building-a-f02-west-r01"
+      },
+      {
+        "predicate": "MEASURES",
+        "target_code": "building-a-f02-west-r01"
+      }
+    ]
+  },
+  {
+    "code": "iaq-a-f02-west-r02",
+    "name": "IAQ A F02 West Room 2",
+    "site_code": "SITE_CAMPUS_A",
+    "entity_type": "IAQ_SENSOR",
+    "brick_class": "brick:Air_Quality_Sensor",
+    "metadata": {
+      "property_id": "building-a"
+    },
+    "relationships": [
+      {
+        "predicate": "LOCATED_IN",
+        "target_code": "building-a-f02-west-r02"
+      },
+      {
+        "predicate": "MEASURES",
+        "target_code": "building-a-f02-west-r02"
+      }
+    ]
+  },
+  {
+    "code": "meter-a-f03",
+    "name": "Building A Floor 3 Electricity Meter",
+    "site_code": "SITE_CAMPUS_A",
+    "entity_type": "METER",
+    "brick_class": "brick:Electric_Meter",
+    "metadata": {
+      "property_id": "building-a"
+    },
+    "relationships": [
+      {
+        "predicate": "LOCATED_IN",
+        "target_code": "building-a-plant-room"
+      },
+      {
+        "predicate": "MEASURES",
+        "target_code": "building-a-f03"
+      }
+    ]
+  },
+  {
+    "code": "ahu-a-f03-east",
+    "name": "AHU A F03 East",
+    "site_code": "SITE_CAMPUS_A",
+    "entity_type": "AHU",
+    "brick_class": "brick:Air_Handling_Unit",
+    "metadata": {
+      "property_id": "building-a"
+    },
+    "relationships": [
+      {
+        "predicate": "LOCATED_IN",
+        "target_code": "building-a-plant-room"
+      },
+      {
+        "predicate": "FEEDS",
+        "target_code": "building-a-f03-east"
+      }
+    ]
+  },
+  {
+    "code": "iaq-a-f03-east-r01",
+    "name": "IAQ A F03 East Room 1",
+    "site_code": "SITE_CAMPUS_A",
+    "entity_type": "IAQ_SENSOR",
+    "brick_class": "brick:Air_Quality_Sensor",
+    "metadata": {
+      "property_id": "building-a"
+    },
+    "relationships": [
+      {
+        "predicate": "LOCATED_IN",
+        "target_code": "building-a-f03-east-r01"
+      },
+      {
+        "predicate": "MEASURES",
+        "target_code": "building-a-f03-east-r01"
+      }
+    ]
+  },
+  {
+    "code": "iaq-a-f03-east-r02",
+    "name": "IAQ A F03 East Room 2",
+    "site_code": "SITE_CAMPUS_A",
+    "entity_type": "IAQ_SENSOR",
+    "brick_class": "brick:Air_Quality_Sensor",
+    "metadata": {
+      "property_id": "building-a"
+    },
+    "relationships": [
+      {
+        "predicate": "LOCATED_IN",
+        "target_code": "building-a-f03-east-r02"
+      },
+      {
+        "predicate": "MEASURES",
+        "target_code": "building-a-f03-east-r02"
+      }
+    ]
+  },
+  {
+    "code": "ahu-a-f03-west",
+    "name": "AHU A F03 West",
+    "site_code": "SITE_CAMPUS_A",
+    "entity_type": "AHU",
+    "brick_class": "brick:Air_Handling_Unit",
+    "metadata": {
+      "property_id": "building-a"
+    },
+    "relationships": [
+      {
+        "predicate": "LOCATED_IN",
+        "target_code": "building-a-plant-room"
+      },
+      {
+        "predicate": "FEEDS",
+        "target_code": "building-a-f03-west"
+      }
+    ]
+  },
+  {
+    "code": "iaq-a-f03-west-r01",
+    "name": "IAQ A F03 West Room 1",
+    "site_code": "SITE_CAMPUS_A",
+    "entity_type": "IAQ_SENSOR",
+    "brick_class": "brick:Air_Quality_Sensor",
+    "metadata": {
+      "property_id": "building-a"
+    },
+    "relationships": [
+      {
+        "predicate": "LOCATED_IN",
+        "target_code": "building-a-f03-west-r01"
+      },
+      {
+        "predicate": "MEASURES",
+        "target_code": "building-a-f03-west-r01"
+      }
+    ]
+  },
+  {
+    "code": "iaq-a-f03-west-r02",
+    "name": "IAQ A F03 West Room 2",
+    "site_code": "SITE_CAMPUS_A",
+    "entity_type": "IAQ_SENSOR",
+    "brick_class": "brick:Air_Quality_Sensor",
+    "metadata": {
+      "property_id": "building-a"
+    },
+    "relationships": [
+      {
+        "predicate": "LOCATED_IN",
+        "target_code": "building-a-f03-west-r02"
+      },
+      {
+        "predicate": "MEASURES",
+        "target_code": "building-a-f03-west-r02"
+      }
+    ]
+  },
+  {
+    "code": "meter-a-f04",
+    "name": "Building A Floor 4 Electricity Meter",
+    "site_code": "SITE_CAMPUS_A",
+    "entity_type": "METER",
+    "brick_class": "brick:Electric_Meter",
+    "metadata": {
+      "property_id": "building-a"
+    },
+    "relationships": [
+      {
+        "predicate": "LOCATED_IN",
+        "target_code": "building-a-plant-room"
+      },
+      {
+        "predicate": "MEASURES",
+        "target_code": "building-a-f04"
+      }
+    ]
+  },
+  {
+    "code": "ahu-a-f04-east",
+    "name": "AHU A F04 East",
+    "site_code": "SITE_CAMPUS_A",
+    "entity_type": "AHU",
+    "brick_class": "brick:Air_Handling_Unit",
+    "metadata": {
+      "property_id": "building-a"
+    },
+    "relationships": [
+      {
+        "predicate": "LOCATED_IN",
+        "target_code": "building-a-plant-room"
+      },
+      {
+        "predicate": "FEEDS",
+        "target_code": "building-a-f04-east"
+      }
+    ]
+  },
+  {
+    "code": "iaq-a-f04-east-r01",
+    "name": "IAQ A F04 East Room 1",
+    "site_code": "SITE_CAMPUS_A",
+    "entity_type": "IAQ_SENSOR",
+    "brick_class": "brick:Air_Quality_Sensor",
+    "metadata": {
+      "property_id": "building-a"
+    },
+    "relationships": [
+      {
+        "predicate": "LOCATED_IN",
+        "target_code": "building-a-f04-east-r01"
+      },
+      {
+        "predicate": "MEASURES",
+        "target_code": "building-a-f04-east-r01"
+      }
+    ]
+  },
+  {
+    "code": "iaq-a-f04-east-r02",
+    "name": "IAQ A F04 East Room 2",
+    "site_code": "SITE_CAMPUS_A",
+    "entity_type": "IAQ_SENSOR",
+    "brick_class": "brick:Air_Quality_Sensor",
+    "metadata": {
+      "property_id": "building-a"
+    },
+    "relationships": [
+      {
+        "predicate": "LOCATED_IN",
+        "target_code": "building-a-f04-east-r02"
+      },
+      {
+        "predicate": "MEASURES",
+        "target_code": "building-a-f04-east-r02"
+      }
+    ]
+  },
+  {
+    "code": "ahu-a-f04-west",
+    "name": "AHU A F04 West",
+    "site_code": "SITE_CAMPUS_A",
+    "entity_type": "AHU",
+    "brick_class": "brick:Air_Handling_Unit",
+    "metadata": {
+      "property_id": "building-a"
+    },
+    "relationships": [
+      {
+        "predicate": "LOCATED_IN",
+        "target_code": "building-a-plant-room"
+      },
+      {
+        "predicate": "FEEDS",
+        "target_code": "building-a-f04-west"
+      }
+    ]
+  },
+  {
+    "code": "iaq-a-f04-west-r01",
+    "name": "IAQ A F04 West Room 1",
+    "site_code": "SITE_CAMPUS_A",
+    "entity_type": "IAQ_SENSOR",
+    "brick_class": "brick:Air_Quality_Sensor",
+    "metadata": {
+      "property_id": "building-a"
+    },
+    "relationships": [
+      {
+        "predicate": "LOCATED_IN",
+        "target_code": "building-a-f04-west-r01"
+      },
+      {
+        "predicate": "MEASURES",
+        "target_code": "building-a-f04-west-r01"
+      }
+    ]
+  },
+  {
+    "code": "iaq-a-f04-west-r02",
+    "name": "IAQ A F04 West Room 2",
+    "site_code": "SITE_CAMPUS_A",
+    "entity_type": "IAQ_SENSOR",
+    "brick_class": "brick:Air_Quality_Sensor",
+    "metadata": {
+      "property_id": "building-a"
+    },
+    "relationships": [
+      {
+        "predicate": "LOCATED_IN",
+        "target_code": "building-a-f04-west-r02"
+      },
+      {
+        "predicate": "MEASURES",
+        "target_code": "building-a-f04-west-r02"
+      }
+    ]
+  },
+  {
+    "code": "meter-b-f01",
+    "name": "Building B Floor 1 Electricity Meter",
+    "site_code": "SITE_CAMPUS_B",
+    "entity_type": "METER",
+    "brick_class": "brick:Electric_Meter",
+    "metadata": {
+      "property_id": "building-b"
+    },
+    "relationships": [
+      {
+        "predicate": "LOCATED_IN",
+        "target_code": "building-b-plant-room"
+      },
+      {
+        "predicate": "MEASURES",
+        "target_code": "building-b-f01"
+      }
+    ]
+  },
+  {
+    "code": "ahu-b-f01-east",
+    "name": "AHU B F01 East",
+    "site_code": "SITE_CAMPUS_B",
+    "entity_type": "AHU",
+    "brick_class": "brick:Air_Handling_Unit",
+    "metadata": {
+      "property_id": "building-b"
+    },
+    "relationships": [
+      {
+        "predicate": "LOCATED_IN",
+        "target_code": "building-b-plant-room"
+      },
+      {
+        "predicate": "FEEDS",
+        "target_code": "building-b-f01-east"
+      }
+    ]
+  },
+  {
+    "code": "iaq-b-f01-east-r01",
+    "name": "IAQ B F01 East Room 1",
+    "site_code": "SITE_CAMPUS_B",
+    "entity_type": "IAQ_SENSOR",
+    "brick_class": "brick:Air_Quality_Sensor",
+    "metadata": {
+      "property_id": "building-b"
+    },
+    "relationships": [
+      {
+        "predicate": "LOCATED_IN",
+        "target_code": "building-b-f01-east-r01"
+      },
+      {
+        "predicate": "MEASURES",
+        "target_code": "building-b-f01-east-r01"
+      }
+    ]
+  },
+  {
+    "code": "iaq-b-f01-east-r02",
+    "name": "IAQ B F01 East Room 2",
+    "site_code": "SITE_CAMPUS_B",
+    "entity_type": "IAQ_SENSOR",
+    "brick_class": "brick:Air_Quality_Sensor",
+    "metadata": {
+      "property_id": "building-b"
+    },
+    "relationships": [
+      {
+        "predicate": "LOCATED_IN",
+        "target_code": "building-b-f01-east-r02"
+      },
+      {
+        "predicate": "MEASURES",
+        "target_code": "building-b-f01-east-r02"
+      }
+    ]
+  },
+  {
+    "code": "ahu-b-f01-west",
+    "name": "AHU B F01 West",
+    "site_code": "SITE_CAMPUS_B",
+    "entity_type": "AHU",
+    "brick_class": "brick:Air_Handling_Unit",
+    "metadata": {
+      "property_id": "building-b"
+    },
+    "relationships": [
+      {
+        "predicate": "LOCATED_IN",
+        "target_code": "building-b-plant-room"
+      },
+      {
+        "predicate": "FEEDS",
+        "target_code": "building-b-f01-west"
+      }
+    ]
+  },
+  {
+    "code": "iaq-b-f01-west-r01",
+    "name": "IAQ B F01 West Room 1",
+    "site_code": "SITE_CAMPUS_B",
+    "entity_type": "IAQ_SENSOR",
+    "brick_class": "brick:Air_Quality_Sensor",
+    "metadata": {
+      "property_id": "building-b"
+    },
+    "relationships": [
+      {
+        "predicate": "LOCATED_IN",
+        "target_code": "building-b-f01-west-r01"
+      },
+      {
+        "predicate": "MEASURES",
+        "target_code": "building-b-f01-west-r01"
+      }
+    ]
+  },
+  {
+    "code": "iaq-b-f01-west-r02",
+    "name": "IAQ B F01 West Room 2",
+    "site_code": "SITE_CAMPUS_B",
+    "entity_type": "IAQ_SENSOR",
+    "brick_class": "brick:Air_Quality_Sensor",
+    "metadata": {
+      "property_id": "building-b"
+    },
+    "relationships": [
+      {
+        "predicate": "LOCATED_IN",
+        "target_code": "building-b-f01-west-r02"
+      },
+      {
+        "predicate": "MEASURES",
+        "target_code": "building-b-f01-west-r02"
+      }
+    ]
+  },
+  {
+    "code": "meter-b-f02",
+    "name": "Building B Floor 2 Electricity Meter",
+    "site_code": "SITE_CAMPUS_B",
+    "entity_type": "METER",
+    "brick_class": "brick:Electric_Meter",
+    "metadata": {
+      "property_id": "building-b"
+    },
+    "relationships": [
+      {
+        "predicate": "LOCATED_IN",
+        "target_code": "building-b-plant-room"
+      },
+      {
+        "predicate": "MEASURES",
+        "target_code": "building-b-f02"
+      }
+    ]
+  },
+  {
+    "code": "ahu-b-f02-east",
+    "name": "AHU B F02 East",
+    "site_code": "SITE_CAMPUS_B",
+    "entity_type": "AHU",
+    "brick_class": "brick:Air_Handling_Unit",
+    "metadata": {
+      "property_id": "building-b"
+    },
+    "relationships": [
+      {
+        "predicate": "LOCATED_IN",
+        "target_code": "building-b-plant-room"
+      },
+      {
+        "predicate": "FEEDS",
+        "target_code": "building-b-f02-east"
+      }
+    ]
+  },
+  {
+    "code": "iaq-b-f02-east-r01",
+    "name": "IAQ B F02 East Room 1",
+    "site_code": "SITE_CAMPUS_B",
+    "entity_type": "IAQ_SENSOR",
+    "brick_class": "brick:Air_Quality_Sensor",
+    "metadata": {
+      "property_id": "building-b"
+    },
+    "relationships": [
+      {
+        "predicate": "LOCATED_IN",
+        "target_code": "building-b-f02-east-r01"
+      },
+      {
+        "predicate": "MEASURES",
+        "target_code": "building-b-f02-east-r01"
+      }
+    ]
+  },
+  {
+    "code": "iaq-b-f02-east-r02",
+    "name": "IAQ B F02 East Room 2",
+    "site_code": "SITE_CAMPUS_B",
+    "entity_type": "IAQ_SENSOR",
+    "brick_class": "brick:Air_Quality_Sensor",
+    "metadata": {
+      "property_id": "building-b"
+    },
+    "relationships": [
+      {
+        "predicate": "LOCATED_IN",
+        "target_code": "building-b-f02-east-r02"
+      },
+      {
+        "predicate": "MEASURES",
+        "target_code": "building-b-f02-east-r02"
+      }
+    ]
+  },
+  {
+    "code": "ahu-b-f02-west",
+    "name": "AHU B F02 West",
+    "site_code": "SITE_CAMPUS_B",
+    "entity_type": "AHU",
+    "brick_class": "brick:Air_Handling_Unit",
+    "metadata": {
+      "property_id": "building-b"
+    },
+    "relationships": [
+      {
+        "predicate": "LOCATED_IN",
+        "target_code": "building-b-plant-room"
+      },
+      {
+        "predicate": "FEEDS",
+        "target_code": "building-b-f02-west"
+      }
+    ]
+  },
+  {
+    "code": "iaq-b-f02-west-r01",
+    "name": "IAQ B F02 West Room 1",
+    "site_code": "SITE_CAMPUS_B",
+    "entity_type": "IAQ_SENSOR",
+    "brick_class": "brick:Air_Quality_Sensor",
+    "metadata": {
+      "property_id": "building-b"
+    },
+    "relationships": [
+      {
+        "predicate": "LOCATED_IN",
+        "target_code": "building-b-f02-west-r01"
+      },
+      {
+        "predicate": "MEASURES",
+        "target_code": "building-b-f02-west-r01"
+      }
+    ]
+  },
+  {
+    "code": "iaq-b-f02-west-r02",
+    "name": "IAQ B F02 West Room 2",
+    "site_code": "SITE_CAMPUS_B",
+    "entity_type": "IAQ_SENSOR",
+    "brick_class": "brick:Air_Quality_Sensor",
+    "metadata": {
+      "property_id": "building-b"
+    },
+    "relationships": [
+      {
+        "predicate": "LOCATED_IN",
+        "target_code": "building-b-f02-west-r02"
+      },
+      {
+        "predicate": "MEASURES",
+        "target_code": "building-b-f02-west-r02"
+      }
+    ]
+  },
+  {
+    "code": "meter-b-f03",
+    "name": "Building B Floor 3 Electricity Meter",
+    "site_code": "SITE_CAMPUS_B",
+    "entity_type": "METER",
+    "brick_class": "brick:Electric_Meter",
+    "metadata": {
+      "property_id": "building-b"
+    },
+    "relationships": [
+      {
+        "predicate": "LOCATED_IN",
+        "target_code": "building-b-plant-room"
+      },
+      {
+        "predicate": "MEASURES",
+        "target_code": "building-b-f03"
+      }
+    ]
+  },
+  {
+    "code": "ahu-b-f03-east",
+    "name": "AHU B F03 East",
+    "site_code": "SITE_CAMPUS_B",
+    "entity_type": "AHU",
+    "brick_class": "brick:Air_Handling_Unit",
+    "metadata": {
+      "property_id": "building-b"
+    },
+    "relationships": [
+      {
+        "predicate": "LOCATED_IN",
+        "target_code": "building-b-plant-room"
+      },
+      {
+        "predicate": "FEEDS",
+        "target_code": "building-b-f03-east"
+      }
+    ]
+  },
+  {
+    "code": "iaq-b-f03-east-r01",
+    "name": "IAQ B F03 East Room 1",
+    "site_code": "SITE_CAMPUS_B",
+    "entity_type": "IAQ_SENSOR",
+    "brick_class": "brick:Air_Quality_Sensor",
+    "metadata": {
+      "property_id": "building-b"
+    },
+    "relationships": [
+      {
+        "predicate": "LOCATED_IN",
+        "target_code": "building-b-f03-east-r01"
+      },
+      {
+        "predicate": "MEASURES",
+        "target_code": "building-b-f03-east-r01"
+      }
+    ]
+  },
+  {
+    "code": "iaq-b-f03-east-r02",
+    "name": "IAQ B F03 East Room 2",
+    "site_code": "SITE_CAMPUS_B",
+    "entity_type": "IAQ_SENSOR",
+    "brick_class": "brick:Air_Quality_Sensor",
+    "metadata": {
+      "property_id": "building-b"
+    },
+    "relationships": [
+      {
+        "predicate": "LOCATED_IN",
+        "target_code": "building-b-f03-east-r02"
+      },
+      {
+        "predicate": "MEASURES",
+        "target_code": "building-b-f03-east-r02"
+      }
+    ]
+  },
+  {
+    "code": "ahu-b-f03-west",
+    "name": "AHU B F03 West",
+    "site_code": "SITE_CAMPUS_B",
+    "entity_type": "AHU",
+    "brick_class": "brick:Air_Handling_Unit",
+    "metadata": {
+      "property_id": "building-b"
+    },
+    "relationships": [
+      {
+        "predicate": "LOCATED_IN",
+        "target_code": "building-b-plant-room"
+      },
+      {
+        "predicate": "FEEDS",
+        "target_code": "building-b-f03-west"
+      }
+    ]
+  },
+  {
+    "code": "iaq-b-f03-west-r01",
+    "name": "IAQ B F03 West Room 1",
+    "site_code": "SITE_CAMPUS_B",
+    "entity_type": "IAQ_SENSOR",
+    "brick_class": "brick:Air_Quality_Sensor",
+    "metadata": {
+      "property_id": "building-b"
+    },
+    "relationships": [
+      {
+        "predicate": "LOCATED_IN",
+        "target_code": "building-b-f03-west-r01"
+      },
+      {
+        "predicate": "MEASURES",
+        "target_code": "building-b-f03-west-r01"
+      }
+    ]
+  },
+  {
+    "code": "iaq-b-f03-west-r02",
+    "name": "IAQ B F03 West Room 2",
+    "site_code": "SITE_CAMPUS_B",
+    "entity_type": "IAQ_SENSOR",
+    "brick_class": "brick:Air_Quality_Sensor",
+    "metadata": {
+      "property_id": "building-b"
+    },
+    "relationships": [
+      {
+        "predicate": "LOCATED_IN",
+        "target_code": "building-b-f03-west-r02"
+      },
+      {
+        "predicate": "MEASURES",
+        "target_code": "building-b-f03-west-r02"
+      }
+    ]
+  },
+  {
+    "code": "meter-b-f04",
+    "name": "Building B Floor 4 Electricity Meter",
+    "site_code": "SITE_CAMPUS_B",
+    "entity_type": "METER",
+    "brick_class": "brick:Electric_Meter",
+    "metadata": {
+      "property_id": "building-b"
+    },
+    "relationships": [
+      {
+        "predicate": "LOCATED_IN",
+        "target_code": "building-b-plant-room"
+      },
+      {
+        "predicate": "MEASURES",
+        "target_code": "building-b-f04"
+      }
+    ]
+  },
+  {
+    "code": "ahu-b-f04-east",
+    "name": "AHU B F04 East",
+    "site_code": "SITE_CAMPUS_B",
+    "entity_type": "AHU",
+    "brick_class": "brick:Air_Handling_Unit",
+    "metadata": {
+      "property_id": "building-b"
+    },
+    "relationships": [
+      {
+        "predicate": "LOCATED_IN",
+        "target_code": "building-b-plant-room"
+      },
+      {
+        "predicate": "FEEDS",
+        "target_code": "building-b-f04-east"
+      }
+    ]
+  },
+  {
+    "code": "iaq-b-f04-east-r01",
+    "name": "IAQ B F04 East Room 1",
+    "site_code": "SITE_CAMPUS_B",
+    "entity_type": "IAQ_SENSOR",
+    "brick_class": "brick:Air_Quality_Sensor",
+    "metadata": {
+      "property_id": "building-b"
+    },
+    "relationships": [
+      {
+        "predicate": "LOCATED_IN",
+        "target_code": "building-b-f04-east-r01"
+      },
+      {
+        "predicate": "MEASURES",
+        "target_code": "building-b-f04-east-r01"
+      }
+    ]
+  },
+  {
+    "code": "iaq-b-f04-east-r02",
+    "name": "IAQ B F04 East Room 2",
+    "site_code": "SITE_CAMPUS_B",
+    "entity_type": "IAQ_SENSOR",
+    "brick_class": "brick:Air_Quality_Sensor",
+    "metadata": {
+      "property_id": "building-b"
+    },
+    "relationships": [
+      {
+        "predicate": "LOCATED_IN",
+        "target_code": "building-b-f04-east-r02"
+      },
+      {
+        "predicate": "MEASURES",
+        "target_code": "building-b-f04-east-r02"
+      }
+    ]
+  },
+  {
+    "code": "ahu-b-f04-west",
+    "name": "AHU B F04 West",
+    "site_code": "SITE_CAMPUS_B",
+    "entity_type": "AHU",
+    "brick_class": "brick:Air_Handling_Unit",
+    "metadata": {
+      "property_id": "building-b"
+    },
+    "relationships": [
+      {
+        "predicate": "LOCATED_IN",
+        "target_code": "building-b-plant-room"
+      },
+      {
+        "predicate": "FEEDS",
+        "target_code": "building-b-f04-west"
+      }
+    ]
+  },
+  {
+    "code": "iaq-b-f04-west-r01",
+    "name": "IAQ B F04 West Room 1",
+    "site_code": "SITE_CAMPUS_B",
+    "entity_type": "IAQ_SENSOR",
+    "brick_class": "brick:Air_Quality_Sensor",
+    "metadata": {
+      "property_id": "building-b"
+    },
+    "relationships": [
+      {
+        "predicate": "LOCATED_IN",
+        "target_code": "building-b-f04-west-r01"
+      },
+      {
+        "predicate": "MEASURES",
+        "target_code": "building-b-f04-west-r01"
+      }
+    ]
+  },
+  {
+    "code": "iaq-b-f04-west-r02",
+    "name": "IAQ B F04 West Room 2",
+    "site_code": "SITE_CAMPUS_B",
+    "entity_type": "IAQ_SENSOR",
+    "brick_class": "brick:Air_Quality_Sensor",
+    "metadata": {
+      "property_id": "building-b"
+    },
+    "relationships": [
+      {
+        "predicate": "LOCATED_IN",
+        "target_code": "building-b-f04-west-r02"
+      },
+      {
+        "predicate": "MEASURES",
+        "target_code": "building-b-f04-west-r02"
+      }
+    ]
+  },
+  {
+    "code": "meter-c-f01",
+    "name": "Building C Floor 1 Electricity Meter",
+    "site_code": "SITE_CAMPUS_C",
+    "entity_type": "METER",
+    "brick_class": "brick:Electric_Meter",
+    "metadata": {
+      "property_id": "building-c"
+    },
+    "relationships": [
+      {
+        "predicate": "LOCATED_IN",
+        "target_code": "building-c-plant-room"
+      },
+      {
+        "predicate": "MEASURES",
+        "target_code": "building-c-f01"
+      }
+    ]
+  },
+  {
+    "code": "ahu-c-f01-east",
+    "name": "AHU C F01 East",
+    "site_code": "SITE_CAMPUS_C",
+    "entity_type": "AHU",
+    "brick_class": "brick:Air_Handling_Unit",
+    "metadata": {
+      "property_id": "building-c"
+    },
+    "relationships": [
+      {
+        "predicate": "LOCATED_IN",
+        "target_code": "building-c-plant-room"
+      },
+      {
+        "predicate": "FEEDS",
+        "target_code": "building-c-f01-east"
+      }
+    ]
+  },
+  {
+    "code": "iaq-c-f01-east-r01",
+    "name": "IAQ C F01 East Room 1",
+    "site_code": "SITE_CAMPUS_C",
+    "entity_type": "IAQ_SENSOR",
+    "brick_class": "brick:Air_Quality_Sensor",
+    "metadata": {
+      "property_id": "building-c"
+    },
+    "relationships": [
+      {
+        "predicate": "LOCATED_IN",
+        "target_code": "building-c-f01-east-r01"
+      },
+      {
+        "predicate": "MEASURES",
+        "target_code": "building-c-f01-east-r01"
+      }
+    ]
+  },
+  {
+    "code": "iaq-c-f01-east-r02",
+    "name": "IAQ C F01 East Room 2",
+    "site_code": "SITE_CAMPUS_C",
+    "entity_type": "IAQ_SENSOR",
+    "brick_class": "brick:Air_Quality_Sensor",
+    "metadata": {
+      "property_id": "building-c"
+    },
+    "relationships": [
+      {
+        "predicate": "LOCATED_IN",
+        "target_code": "building-c-f01-east-r02"
+      },
+      {
+        "predicate": "MEASURES",
+        "target_code": "building-c-f01-east-r02"
+      }
+    ]
+  },
+  {
+    "code": "ahu-c-f01-west",
+    "name": "AHU C F01 West",
+    "site_code": "SITE_CAMPUS_C",
+    "entity_type": "AHU",
+    "brick_class": "brick:Air_Handling_Unit",
+    "metadata": {
+      "property_id": "building-c"
+    },
+    "relationships": [
+      {
+        "predicate": "LOCATED_IN",
+        "target_code": "building-c-plant-room"
+      },
+      {
+        "predicate": "FEEDS",
+        "target_code": "building-c-f01-west"
+      }
+    ]
+  },
+  {
+    "code": "iaq-c-f01-west-r01",
+    "name": "IAQ C F01 West Room 1",
+    "site_code": "SITE_CAMPUS_C",
+    "entity_type": "IAQ_SENSOR",
+    "brick_class": "brick:Air_Quality_Sensor",
+    "metadata": {
+      "property_id": "building-c"
+    },
+    "relationships": [
+      {
+        "predicate": "LOCATED_IN",
+        "target_code": "building-c-f01-west-r01"
+      },
+      {
+        "predicate": "MEASURES",
+        "target_code": "building-c-f01-west-r01"
+      }
+    ]
+  },
+  {
+    "code": "iaq-c-f01-west-r02",
+    "name": "IAQ C F01 West Room 2",
+    "site_code": "SITE_CAMPUS_C",
+    "entity_type": "IAQ_SENSOR",
+    "brick_class": "brick:Air_Quality_Sensor",
+    "metadata": {
+      "property_id": "building-c"
+    },
+    "relationships": [
+      {
+        "predicate": "LOCATED_IN",
+        "target_code": "building-c-f01-west-r02"
+      },
+      {
+        "predicate": "MEASURES",
+        "target_code": "building-c-f01-west-r02"
+      }
+    ]
+  },
+  {
+    "code": "meter-c-f02",
+    "name": "Building C Floor 2 Electricity Meter",
+    "site_code": "SITE_CAMPUS_C",
+    "entity_type": "METER",
+    "brick_class": "brick:Electric_Meter",
+    "metadata": {
+      "property_id": "building-c"
+    },
+    "relationships": [
+      {
+        "predicate": "LOCATED_IN",
+        "target_code": "building-c-plant-room"
+      },
+      {
+        "predicate": "MEASURES",
+        "target_code": "building-c-f02"
+      }
+    ]
+  },
+  {
+    "code": "ahu-c-f02-east",
+    "name": "AHU C F02 East",
+    "site_code": "SITE_CAMPUS_C",
+    "entity_type": "AHU",
+    "brick_class": "brick:Air_Handling_Unit",
+    "metadata": {
+      "property_id": "building-c"
+    },
+    "relationships": [
+      {
+        "predicate": "LOCATED_IN",
+        "target_code": "building-c-plant-room"
+      },
+      {
+        "predicate": "FEEDS",
+        "target_code": "building-c-f02-east"
+      }
+    ]
+  },
+  {
+    "code": "iaq-c-f02-east-r01",
+    "name": "IAQ C F02 East Room 1",
+    "site_code": "SITE_CAMPUS_C",
+    "entity_type": "IAQ_SENSOR",
+    "brick_class": "brick:Air_Quality_Sensor",
+    "metadata": {
+      "property_id": "building-c"
+    },
+    "relationships": [
+      {
+        "predicate": "LOCATED_IN",
+        "target_code": "building-c-f02-east-r01"
+      },
+      {
+        "predicate": "MEASURES",
+        "target_code": "building-c-f02-east-r01"
+      }
+    ]
+  },
+  {
+    "code": "iaq-c-f02-east-r02",
+    "name": "IAQ C F02 East Room 2",
+    "site_code": "SITE_CAMPUS_C",
+    "entity_type": "IAQ_SENSOR",
+    "brick_class": "brick:Air_Quality_Sensor",
+    "metadata": {
+      "property_id": "building-c"
+    },
+    "relationships": [
+      {
+        "predicate": "LOCATED_IN",
+        "target_code": "building-c-f02-east-r02"
+      },
+      {
+        "predicate": "MEASURES",
+        "target_code": "building-c-f02-east-r02"
+      }
+    ]
+  },
+  {
+    "code": "ahu-c-f02-west",
+    "name": "AHU C F02 West",
+    "site_code": "SITE_CAMPUS_C",
+    "entity_type": "AHU",
+    "brick_class": "brick:Air_Handling_Unit",
+    "metadata": {
+      "property_id": "building-c"
+    },
+    "relationships": [
+      {
+        "predicate": "LOCATED_IN",
+        "target_code": "building-c-plant-room"
+      },
+      {
+        "predicate": "FEEDS",
+        "target_code": "building-c-f02-west"
+      }
+    ]
+  },
+  {
+    "code": "iaq-c-f02-west-r01",
+    "name": "IAQ C F02 West Room 1",
+    "site_code": "SITE_CAMPUS_C",
+    "entity_type": "IAQ_SENSOR",
+    "brick_class": "brick:Air_Quality_Sensor",
+    "metadata": {
+      "property_id": "building-c"
+    },
+    "relationships": [
+      {
+        "predicate": "LOCATED_IN",
+        "target_code": "building-c-f02-west-r01"
+      },
+      {
+        "predicate": "MEASURES",
+        "target_code": "building-c-f02-west-r01"
+      }
+    ]
+  },
+  {
+    "code": "iaq-c-f02-west-r02",
+    "name": "IAQ C F02 West Room 2",
+    "site_code": "SITE_CAMPUS_C",
+    "entity_type": "IAQ_SENSOR",
+    "brick_class": "brick:Air_Quality_Sensor",
+    "metadata": {
+      "property_id": "building-c"
+    },
+    "relationships": [
+      {
+        "predicate": "LOCATED_IN",
+        "target_code": "building-c-f02-west-r02"
+      },
+      {
+        "predicate": "MEASURES",
+        "target_code": "building-c-f02-west-r02"
+      }
+    ]
+  },
+  {
+    "code": "meter-c-f03",
+    "name": "Building C Floor 3 Electricity Meter",
+    "site_code": "SITE_CAMPUS_C",
+    "entity_type": "METER",
+    "brick_class": "brick:Electric_Meter",
+    "metadata": {
+      "property_id": "building-c"
+    },
+    "relationships": [
+      {
+        "predicate": "LOCATED_IN",
+        "target_code": "building-c-plant-room"
+      },
+      {
+        "predicate": "MEASURES",
+        "target_code": "building-c-f03"
+      }
+    ]
+  },
+  {
+    "code": "ahu-c-f03-east",
+    "name": "AHU C F03 East",
+    "site_code": "SITE_CAMPUS_C",
+    "entity_type": "AHU",
+    "brick_class": "brick:Air_Handling_Unit",
+    "metadata": {
+      "property_id": "building-c"
+    },
+    "relationships": [
+      {
+        "predicate": "LOCATED_IN",
+        "target_code": "building-c-plant-room"
+      },
+      {
+        "predicate": "FEEDS",
+        "target_code": "building-c-f03-east"
+      }
+    ]
+  },
+  {
+    "code": "iaq-c-f03-east-r01",
+    "name": "IAQ C F03 East Room 1",
+    "site_code": "SITE_CAMPUS_C",
+    "entity_type": "IAQ_SENSOR",
+    "brick_class": "brick:Air_Quality_Sensor",
+    "metadata": {
+      "property_id": "building-c"
+    },
+    "relationships": [
+      {
+        "predicate": "LOCATED_IN",
+        "target_code": "building-c-f03-east-r01"
+      },
+      {
+        "predicate": "MEASURES",
+        "target_code": "building-c-f03-east-r01"
+      }
+    ]
+  },
+  {
+    "code": "iaq-c-f03-east-r02",
+    "name": "IAQ C F03 East Room 2",
+    "site_code": "SITE_CAMPUS_C",
+    "entity_type": "IAQ_SENSOR",
+    "brick_class": "brick:Air_Quality_Sensor",
+    "metadata": {
+      "property_id": "building-c"
+    },
+    "relationships": [
+      {
+        "predicate": "LOCATED_IN",
+        "target_code": "building-c-f03-east-r02"
+      },
+      {
+        "predicate": "MEASURES",
+        "target_code": "building-c-f03-east-r02"
+      }
+    ]
+  },
+  {
+    "code": "ahu-c-f03-west",
+    "name": "AHU C F03 West",
+    "site_code": "SITE_CAMPUS_C",
+    "entity_type": "AHU",
+    "brick_class": "brick:Air_Handling_Unit",
+    "metadata": {
+      "property_id": "building-c"
+    },
+    "relationships": [
+      {
+        "predicate": "LOCATED_IN",
+        "target_code": "building-c-plant-room"
+      },
+      {
+        "predicate": "FEEDS",
+        "target_code": "building-c-f03-west"
+      }
+    ]
+  },
+  {
+    "code": "iaq-c-f03-west-r01",
+    "name": "IAQ C F03 West Room 1",
+    "site_code": "SITE_CAMPUS_C",
+    "entity_type": "IAQ_SENSOR",
+    "brick_class": "brick:Air_Quality_Sensor",
+    "metadata": {
+      "property_id": "building-c"
+    },
+    "relationships": [
+      {
+        "predicate": "LOCATED_IN",
+        "target_code": "building-c-f03-west-r01"
+      },
+      {
+        "predicate": "MEASURES",
+        "target_code": "building-c-f03-west-r01"
+      }
+    ]
+  },
+  {
+    "code": "iaq-c-f03-west-r02",
+    "name": "IAQ C F03 West Room 2",
+    "site_code": "SITE_CAMPUS_C",
+    "entity_type": "IAQ_SENSOR",
+    "brick_class": "brick:Air_Quality_Sensor",
+    "metadata": {
+      "property_id": "building-c"
+    },
+    "relationships": [
+      {
+        "predicate": "LOCATED_IN",
+        "target_code": "building-c-f03-west-r02"
+      },
+      {
+        "predicate": "MEASURES",
+        "target_code": "building-c-f03-west-r02"
+      }
+    ]
+  },
+  {
+    "code": "meter-c-f04",
+    "name": "Building C Floor 4 Electricity Meter",
+    "site_code": "SITE_CAMPUS_C",
+    "entity_type": "METER",
+    "brick_class": "brick:Electric_Meter",
+    "metadata": {
+      "property_id": "building-c"
+    },
+    "relationships": [
+      {
+        "predicate": "LOCATED_IN",
+        "target_code": "building-c-plant-room"
+      },
+      {
+        "predicate": "MEASURES",
+        "target_code": "building-c-f04"
+      }
+    ]
+  },
+  {
+    "code": "ahu-c-f04-east",
+    "name": "AHU C F04 East",
+    "site_code": "SITE_CAMPUS_C",
+    "entity_type": "AHU",
+    "brick_class": "brick:Air_Handling_Unit",
+    "metadata": {
+      "property_id": "building-c"
+    },
+    "relationships": [
+      {
+        "predicate": "LOCATED_IN",
+        "target_code": "building-c-plant-room"
+      },
+      {
+        "predicate": "FEEDS",
+        "target_code": "building-c-f04-east"
+      }
+    ]
+  },
+  {
+    "code": "iaq-c-f04-east-r01",
+    "name": "IAQ C F04 East Room 1",
+    "site_code": "SITE_CAMPUS_C",
+    "entity_type": "IAQ_SENSOR",
+    "brick_class": "brick:Air_Quality_Sensor",
+    "metadata": {
+      "property_id": "building-c"
+    },
+    "relationships": [
+      {
+        "predicate": "LOCATED_IN",
+        "target_code": "building-c-f04-east-r01"
+      },
+      {
+        "predicate": "MEASURES",
+        "target_code": "building-c-f04-east-r01"
+      }
+    ]
+  },
+  {
+    "code": "iaq-c-f04-east-r02",
+    "name": "IAQ C F04 East Room 2",
+    "site_code": "SITE_CAMPUS_C",
+    "entity_type": "IAQ_SENSOR",
+    "brick_class": "brick:Air_Quality_Sensor",
+    "metadata": {
+      "property_id": "building-c"
+    },
+    "relationships": [
+      {
+        "predicate": "LOCATED_IN",
+        "target_code": "building-c-f04-east-r02"
+      },
+      {
+        "predicate": "MEASURES",
+        "target_code": "building-c-f04-east-r02"
+      }
+    ]
+  },
+  {
+    "code": "ahu-c-f04-west",
+    "name": "AHU C F04 West",
+    "site_code": "SITE_CAMPUS_C",
+    "entity_type": "AHU",
+    "brick_class": "brick:Air_Handling_Unit",
+    "metadata": {
+      "property_id": "building-c"
+    },
+    "relationships": [
+      {
+        "predicate": "LOCATED_IN",
+        "target_code": "building-c-plant-room"
+      },
+      {
+        "predicate": "FEEDS",
+        "target_code": "building-c-f04-west"
+      }
+    ]
+  },
+  {
+    "code": "iaq-c-f04-west-r01",
+    "name": "IAQ C F04 West Room 1",
+    "site_code": "SITE_CAMPUS_C",
+    "entity_type": "IAQ_SENSOR",
+    "brick_class": "brick:Air_Quality_Sensor",
+    "metadata": {
+      "property_id": "building-c"
+    },
+    "relationships": [
+      {
+        "predicate": "LOCATED_IN",
+        "target_code": "building-c-f04-west-r01"
+      },
+      {
+        "predicate": "MEASURES",
+        "target_code": "building-c-f04-west-r01"
+      }
+    ]
+  },
+  {
+    "code": "iaq-c-f04-west-r02",
+    "name": "IAQ C F04 West Room 2",
+    "site_code": "SITE_CAMPUS_C",
+    "entity_type": "IAQ_SENSOR",
+    "brick_class": "brick:Air_Quality_Sensor",
+    "metadata": {
+      "property_id": "building-c"
+    },
+    "relationships": [
+      {
+        "predicate": "LOCATED_IN",
+        "target_code": "building-c-f04-west-r02"
+      },
+      {
+        "predicate": "MEASURES",
+        "target_code": "building-c-f04-west-r02"
+      }
+    ]
+  }
+]

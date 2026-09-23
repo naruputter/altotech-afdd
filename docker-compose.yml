@@ -1,0 +1,94 @@
+services:
+  timescaledb:
+    image: timescale/timescaledb:latest-pg16
+    container_name: afdd-timescaledb
+    environment:
+      POSTGRES_USER: ${POSTGRES_USER:-postgres}
+      POSTGRES_PASSWORD: ${POSTGRES_PASSWORD:-postgres}
+      POSTGRES_DB: ${POSTGRES_DB:-afdd_db}
+    ports:
+      - "${POSTGRES_PORT:-5434}:5432"
+    volumes:
+      - timescale_data:/var/lib/postgresql/data
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U ${POSTGRES_USER:-postgres}"]
+      interval: 5s
+      timeout: 5s
+      retries: 5
+    restart: unless-stopped
+
+  nanomq:
+    image: emqx/nanomq:latest
+    container_name: afdd-nanomq
+    ports:
+      - "${MQTT_PORT:-1883}:1883"
+      - "${MQTT_WS_PORT:-8083}:8083"
+    restart: unless-stopped
+
+  api:
+    build:
+      context: ./backend
+      dockerfile: Dockerfile
+    container_name: afdd-api
+    depends_on:
+      timescaledb:
+        condition: service_healthy
+      nanomq:
+        condition: service_started
+    environment:
+      - POSTGRES_SERVER=timescaledb
+      - POSTGRES_PORT=5432
+      - POSTGRES_USER=${POSTGRES_USER:-postgres}
+      - POSTGRES_PASSWORD=${POSTGRES_PASSWORD:-postgres}
+      - POSTGRES_DB=${POSTGRES_DB:-afdd_db}
+      - DATABASE_URL=postgresql+asyncpg://${POSTGRES_USER:-postgres}:${POSTGRES_PASSWORD:-postgres}@timescaledb:5432/${POSTGRES_DB:-afdd_db}
+      - MQTT_BROKER_HOST=nanomq
+      - MQTT_BROKER_PORT=1883
+      - MQTT_TELEMETRY_TOPIC=${MQTT_TELEMETRY_TOPIC:-telemetry/#}
+      - OPENAI_API_KEY=${OPENAI_API_KEY:-}
+      - DEBUG=${DEBUG:-True}
+    ports:
+      - "${API_PORT:-8000}:8000"
+    volumes:
+      - ./backend:/app
+      - ./quiz:/quiz
+    restart: unless-stopped
+
+  simulator:
+    build:
+      context: ./simulator
+      dockerfile: Dockerfile
+    container_name: afdd-simulator
+    depends_on:
+      - nanomq
+      - api
+    environment:
+      - API_BASE_URL=http://api:8000/api/v1
+      - MQTT_BROKER_HOST=nanomq
+      - MQTT_BROKER_PORT=1883
+      - SIMULATION_INTERVAL_AHU=${SIMULATION_INTERVAL_AHU:-15}
+      - SIMULATION_INTERVAL_IAQ=${SIMULATION_INTERVAL_IAQ:-60}
+      - SIMULATION_INTERVAL_METERS=${SIMULATION_INTERVAL_METERS:-60}
+      - ACCELERATION_FACTOR=${ACCELERATION_FACTOR:-1.0}
+    ports:
+      - "3333:3333"
+    volumes:
+      - ./simulator:/app
+    restart: unless-stopped
+
+  frontend:
+    build:
+      context: ./frontend
+      dockerfile: Dockerfile
+    container_name: afdd-frontend
+    depends_on:
+      - api
+    ports:
+      - "${FRONTEND_PORT:-5173}:5173"
+    volumes:
+      - ./frontend:/app
+      - /app/node_modules
+    restart: unless-stopped
+
+volumes:
+  timescale_data:
